@@ -1,7 +1,5 @@
 # progetto_ristorante
 
-Link Utili
-
 **Login & Register**
 
 `Link` --> https://www.youtube.com/watch?v=-ubBkOa9RP0&ab_channel=KimToo
