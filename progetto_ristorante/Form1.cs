@@ -11,5 +11,10 @@ namespace progetto_ristorante
 		{
 
 		}
-	}
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+			MessageBox.Show("ciao");
+        }
+    }
 }
