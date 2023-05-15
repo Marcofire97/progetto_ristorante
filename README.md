@@ -10,5 +10,5 @@
 
 **Utils**
 
-`Link` --> https://www.youtube.com/watch?v=pn7IPCuliZs&ab_channel=Hacked 
+`Link` --> https://www.youtube.com/watch?v=pn7IPCuliZs&ab_channel=Hacked (EXE)
 
