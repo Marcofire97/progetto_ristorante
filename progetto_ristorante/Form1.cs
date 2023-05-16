@@ -16,5 +16,10 @@ namespace progetto_ristorante
         {
 			MessageBox.Show("ciao adwd");
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
