@@ -58,7 +58,6 @@
 			pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
-			pictureBox1.Click += pictureBox1_Click;
 			// 
 			// pictureBox2
 			// 
@@ -81,7 +80,6 @@
 			textBox1.Size = new Size(224, 22);
 			textBox1.TabIndex = 2;
 			textBox1.Text = "Username";
-			textBox1.TextChanged += textBox1_TextChanged;
 			// 
 			// panel1
 			// 
@@ -211,7 +209,6 @@
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Form1";
 			TopMost = true;
-			Load += Form1_Load;
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
