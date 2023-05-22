@@ -10,7 +10,7 @@ namespace progetto_ristorante
 {
 	internal class Utenti_DB
 	{
-		const string STRINGA_CONNESSIONE = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\39351\\Source\\Repos\\Marcofire97\\progetto_ristorante\\progetto_ristorante\\DATABASE\\UTENTI.mdf;Integrated Security=True";
+		const string STRINGA_CONNESSIONE = "workstation id=Ristorante.mssql.somee.com;packet size=4096;user id=Lollone1234_SQLLogin_1;pwd=9ecwjxal7u;data source=Ristorante.mssql.somee.com;persist security info=False;initial catalog=Ristorante";
 		private readonly SqlConnection db;
 
 		public Utenti_DB()
