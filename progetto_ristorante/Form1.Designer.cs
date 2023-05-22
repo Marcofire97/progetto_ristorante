@@ -28,205 +28,213 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblLoggaticon = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(127, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(44, 110);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(75, 116);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 18);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Username";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(44, 142);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 1);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Location = new System.Drawing.Point(44, 207);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 1);
-            this.panel2.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(75, 181);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 18);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "Password";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(44, 175);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Location = new System.Drawing.Point(44, 270);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 1);
-            this.panel3.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.Location = new System.Drawing.Point(75, 244);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 18);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.Text = "Email";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(44, 238);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // lblLoggaticon
-            // 
-            this.lblLoggaticon.AutoSize = true;
-            this.lblLoggaticon.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLoggaticon.ForeColor = System.Drawing.Color.White;
-            this.lblLoggaticon.Location = new System.Drawing.Point(122, 303);
-            this.lblLoggaticon.Name = "lblLoggaticon";
-            this.lblLoggaticon.Size = new System.Drawing.Size(77, 17);
-            this.lblLoggaticon.TabIndex = 10;
-            this.lblLoggaticon.Text = "Loggati con";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(138, 335);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(337, 422);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.lblLoggaticon);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.TopMost = true;
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			pictureBox1 = new PictureBox();
+			pictureBox2 = new PictureBox();
+			textBox1 = new TextBox();
+			panel1 = new Panel();
+			panel2 = new Panel();
+			textBox2 = new TextBox();
+			pictureBox3 = new PictureBox();
+			panel3 = new Panel();
+			textBox3 = new TextBox();
+			pictureBox4 = new PictureBox();
+			lblLoggaticon = new Label();
+			pictureBox5 = new PictureBox();
+			button1 = new Button();
+			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+			SuspendLayout();
+			// 
+			// pictureBox1
+			// 
+			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+			pictureBox1.Location = new Point(145, 15);
+			pictureBox1.Name = "pictureBox1";
+			pictureBox1.Size = new Size(79, 84);
+			pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+			pictureBox1.TabIndex = 0;
+			pictureBox1.TabStop = false;
+			pictureBox1.Click += pictureBox1_Click;
+			// 
+			// pictureBox2
+			// 
+			pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+			pictureBox2.Location = new Point(50, 147);
+			pictureBox2.Name = "pictureBox2";
+			pictureBox2.Size = new Size(29, 33);
+			pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+			pictureBox2.TabIndex = 1;
+			pictureBox2.TabStop = false;
+			// 
+			// textBox1
+			// 
+			textBox1.BackColor = Color.FromArgb(34, 36, 49);
+			textBox1.BorderStyle = BorderStyle.None;
+			textBox1.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox1.ForeColor = Color.WhiteSmoke;
+			textBox1.Location = new Point(86, 155);
+			textBox1.Name = "textBox1";
+			textBox1.Size = new Size(224, 22);
+			textBox1.TabIndex = 2;
+			textBox1.Text = "Username";
+			textBox1.TextChanged += textBox1_TextChanged;
+			// 
+			// panel1
+			// 
+			panel1.BackColor = Color.WhiteSmoke;
+			panel1.Location = new Point(50, 189);
+			panel1.Margin = new Padding(3, 4, 3, 4);
+			panel1.Name = "panel1";
+			panel1.Size = new Size(286, 1);
+			panel1.TabIndex = 3;
+			// 
+			// panel2
+			// 
+			panel2.BackColor = Color.WhiteSmoke;
+			panel2.Location = new Point(50, 276);
+			panel2.Margin = new Padding(3, 4, 3, 4);
+			panel2.Name = "panel2";
+			panel2.Size = new Size(286, 1);
+			panel2.TabIndex = 6;
+			// 
+			// textBox2
+			// 
+			textBox2.BackColor = Color.FromArgb(34, 36, 49);
+			textBox2.BorderStyle = BorderStyle.None;
+			textBox2.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox2.ForeColor = Color.WhiteSmoke;
+			textBox2.Location = new Point(86, 241);
+			textBox2.Name = "textBox2";
+			textBox2.Size = new Size(224, 22);
+			textBox2.TabIndex = 5;
+			textBox2.Text = "Password";
+			// 
+			// pictureBox3
+			// 
+			pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+			pictureBox3.Location = new Point(50, 233);
+			pictureBox3.Name = "pictureBox3";
+			pictureBox3.Size = new Size(29, 33);
+			pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+			pictureBox3.TabIndex = 4;
+			pictureBox3.TabStop = false;
+			// 
+			// panel3
+			// 
+			panel3.BackColor = Color.WhiteSmoke;
+			panel3.Location = new Point(50, 360);
+			panel3.Margin = new Padding(3, 4, 3, 4);
+			panel3.Name = "panel3";
+			panel3.Size = new Size(286, 1);
+			panel3.TabIndex = 9;
+			// 
+			// textBox3
+			// 
+			textBox3.BackColor = Color.FromArgb(34, 36, 49);
+			textBox3.BorderStyle = BorderStyle.None;
+			textBox3.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox3.ForeColor = Color.WhiteSmoke;
+			textBox3.Location = new Point(86, 325);
+			textBox3.Name = "textBox3";
+			textBox3.Size = new Size(224, 22);
+			textBox3.TabIndex = 8;
+			textBox3.Text = "Email";
+			// 
+			// pictureBox4
+			// 
+			pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+			pictureBox4.Location = new Point(50, 317);
+			pictureBox4.Name = "pictureBox4";
+			pictureBox4.Size = new Size(29, 33);
+			pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
+			pictureBox4.TabIndex = 7;
+			pictureBox4.TabStop = false;
+			// 
+			// lblLoggaticon
+			// 
+			lblLoggaticon.AutoSize = true;
+			lblLoggaticon.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			lblLoggaticon.ForeColor = Color.White;
+			lblLoggaticon.Location = new Point(139, 404);
+			lblLoggaticon.Name = "lblLoggaticon";
+			lblLoggaticon.Size = new Size(100, 23);
+			lblLoggaticon.TabIndex = 10;
+			lblLoggaticon.Text = "Loggati con";
+			// 
+			// pictureBox5
+			// 
+			pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+			pictureBox5.Location = new Point(158, 447);
+			pictureBox5.Margin = new Padding(3, 4, 3, 4);
+			pictureBox5.Name = "pictureBox5";
+			pictureBox5.Size = new Size(55, 59);
+			pictureBox5.SizeMode = PictureBoxSizeMode.CenterImage;
+			pictureBox5.TabIndex = 11;
+			pictureBox5.TabStop = false;
+			pictureBox5.Click += pictureBox5_Click;
+			// 
+			// button1
+			// 
+			button1.Location = new Point(139, 372);
+			button1.Name = "button1";
+			button1.Size = new Size(94, 29);
+			button1.TabIndex = 12;
+			button1.Text = "button1";
+			button1.UseVisualStyleBackColor = true;
+			button1.Click += button1_Click;
+			// 
+			// Form1
+			// 
+			AutoScaleDimensions = new SizeF(8F, 20F);
+			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.FromArgb(34, 36, 49);
+			ClientSize = new Size(385, 563);
+			Controls.Add(button1);
+			Controls.Add(pictureBox5);
+			Controls.Add(lblLoggaticon);
+			Controls.Add(panel3);
+			Controls.Add(textBox3);
+			Controls.Add(pictureBox4);
+			Controls.Add(panel2);
+			Controls.Add(textBox2);
+			Controls.Add(pictureBox3);
+			Controls.Add(panel1);
+			Controls.Add(textBox1);
+			Controls.Add(pictureBox2);
+			Controls.Add(pictureBox1);
+			FormBorderStyle = FormBorderStyle.None;
+			Name = "Form1";
+			StartPosition = FormStartPosition.CenterScreen;
+			Text = "Form1";
+			TopMost = true;
+			Load += Form1_Load;
+			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+			((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+			ResumeLayout(false);
+			PerformLayout();
 		}
 
-        #endregion
+		#endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private TextBox textBox1;
-        private Panel panel1;
-        private Panel panel2;
-        private TextBox textBox2;
-        private PictureBox pictureBox3;
-        private Panel panel3;
-        private TextBox textBox3;
-        private PictureBox pictureBox4;
-        private Label lblLoggaticon;
-        private PictureBox pictureBox5;
-    }
+		private PictureBox pictureBox1;
+		private PictureBox pictureBox2;
+		private TextBox textBox1;
+		private Panel panel1;
+		private Panel panel2;
+		private TextBox textBox2;
+		private PictureBox pictureBox3;
+		private Panel panel3;
+		private TextBox textBox3;
+		private PictureBox pictureBox4;
+		private Label lblLoggaticon;
+		private PictureBox pictureBox5;
+		private Button button1;
+	}
 }
