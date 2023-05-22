@@ -12,6 +12,7 @@
     <PackageReference Include="Bunifu.UI.WinForms.NetCore" Version="1.0.1" />
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Google.Apis.Core" Version="1.60.0" />
+    <PackageReference Include="Google.Apis.PeopleService.v1" Version="1.60.0.2924" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
   </ItemGroup>
 
