@@ -21,10 +21,13 @@ namespace progetto_ristorante
 		private void button1_Click(object sender, EventArgs e)
 		{
 			Utenti_DB db = new Utenti_DB();
-			Utenti utente1 = new Utenti(1, "bdtde1234@gmail.com", "lollone1234", "Ciao1234");
+			Utenti utente1 = new Utenti(1, "m44comd@gmail.com", "lollone1234", "Ciao1234");
 
 
-			db.AddUtente(utente1);
+			foreach(var u in db.GetUtenti())
+			{
+				MessageBox.Show(u.ID + u.Email + u.Username + u.Password);
+            }
 		}
 	}
 }

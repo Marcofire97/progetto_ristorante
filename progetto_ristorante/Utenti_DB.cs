@@ -20,23 +20,23 @@ namespace progetto_ristorante
 
 		public List<Utenti> GetUtenti()
 		{
-			return db.Query<Utenti>("SELECT * FROM UTENTI").ToList();
+			return db.Query<Utenti>("SELECT * FROM Utenti").ToList();
 		}
 
 
 		public void AddUtente(Utenti u)
 		{
-			db.Execute("INSERT INTO UTENTI (EMAIL, USERNAME, PASSWORD) VALUES (@Email, @Username, @Password)", u);
+			db.Execute("INSERT INTO Utenti (EMAIL, USERNAME, PASSWORD) VALUES (@Email, @Username, @Password)", u);
 		}
 
 		public void DeleteUtente(Utenti u)
 		{
-			db.Execute("DELETE FROM UTENTI WHERE EMAIL = @Email", u);
+			db.Execute("DELETE FROM Utenti WHERE EMAIL = @Email", u);
 		}
 
 		public void UpdateUtente(Utenti u)
 		{
-			db.Execute("UPDATE UTENTI SET EMAIL = @Username, USERNAME = @Username, PASSWORD = @Password WHERE EMAIL = @email", u);
+			db.Execute("UPDATE Utenti SET EMAIL = @Username, USERNAME = @Username, PASSWORD = @Password WHERE EMAIL = @email", u);
 		}
 	}
 }
