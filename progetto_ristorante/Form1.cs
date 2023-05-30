@@ -1,26 +1,58 @@
-using System.Diagnostics;
-using Google.Apis.Auth;
-using Google.Apis.PeopleService.v1;
-using Google.Apis.Services;
 using System;
+using System.Text.RegularExpressions;
 
 namespace progetto_ristorante
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
         }
-        
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRegistrati_Click(object sender, EventArgs e)
         {
-            DateTime data = DateTime.Now;
-            Utenti_DB db = new Utenti_DB();
-            Utenti u = new Utenti(1, "mudricm1@gmail.com", "Lollo", "Ciaocomeva");
-            db.AddUtente(u);
-            MessageBox.Show(data.ToString());
+            if (Utilita.controllo_email(txbEmailRegister.Text, txbUtenteRegister.Text) && Utilita.controllo_password(txbPasswordRegister.Text) && Utilita.controllo_rete())
+            {
+                
+            }
+
+        }
+
+        private void pcbVaialLogin_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Hide();
+        }
+
+        private void txbPasswordRegister_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbPasswordRegister_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cmbPasswordRegister.Checked)
+            {
+                txbPasswordRegister.PasswordChar = '\0';
+            }
+            else
+            {
+                txbPasswordRegister.PasswordChar = '*';
+            }
+        }
+
+        private void txbUtenteRegister_TextChanged(object sender, EventArgs e)
+        {
+            string input = txbUtenteRegister.Text;
+            string asciiPattern = @"^[\x00-\x7F]*$"; 
+
+            if (!Regex.IsMatch(input, asciiPattern))
+            {
+                txbUtenteRegister.Text = string.Empty; 
+                MessageBox.Show("Sono ammessi solo caratteri ASCII.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

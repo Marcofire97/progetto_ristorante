@@ -33,8 +33,6 @@ namespace progetto_ristorante
 
 		public void AddUtente(Utenti u)
 		{
-			byte[] passwordhashata = HashPassword(u.Password);
-			u.Password = passwordhashata.ToString();
 			db.Execute("INSERT INTO Utenti (EMAIL, USERNAME, PASSWORD) VALUES (@Email, @Username, @Password)", u);
 		}
 
@@ -48,15 +46,6 @@ namespace progetto_ristorante
 			db.Execute("UPDATE Utenti SET EMAIL = @Email, USERNAME = @Username, PASSWORD = @Password WHERE ID = @ID", u);
 		}
 
-		private byte[] HashPassword(string passwordClear)
-		{
-			using (SHA256 hash = SHA256.Create())
-			{
-				byte[] passwordBytes = Encoding.UTF8.GetBytes(passwordClear);
-				byte[] hashBytes = hash.ComputeHash(passwordBytes);
-
-				return hashBytes;
-			}
-		}
+		
 	}
 }

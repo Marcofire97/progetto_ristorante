@@ -27,7 +27,7 @@ namespace progetto_ristorante
 
         public void AddOrdinazione(Ordinazioni o)
         {
-            db.Execute("INSERT INTO Ordinazioni (UtenteID, DataOrdine, Prodotto, Quantita) VALUES (@UtenteID, @DataOrdine, @Prodotto, @Quantita)", o);
+            db.Execute("INSERT INTO Ordinazioni (UtenteID, Email, DataOrdine, Prodotto, Quantita) VALUES (@UtenteID, (SELECT EMAIL FROM Utenti WHERE ID = @UtenteID), @DataOrdine, @Prodotto, @Quantita)", o);
         }
       
     }

@@ -118,7 +118,45 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pcbLogoRegister.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pcbNuovoUtente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAqxJREFUWEft
+        lk+ITVEcxx9C/iwpyWBhmkhZWCJqmFASimymKMxCihQWlpaUpYUSa9RQFijCYjRmgZSFzUyP2Yz07nvv
+        vle85/O7fud15sxx7jP3zM63vt37zvf3+33Pv3veKf3Hv6Jara5K0/RqvV5/CT/DMX7fgus1ZO6A2VFY
+        hW0PJ+nE9na7vVjD44LiOzH56Zj6ON5oNPo0LR4o/M4xCvGZpsUBI+r1mITYYsbWanpxUPCIY5DLWq22
+        T9OLg9Gc8JmESM6gphcHS7DHZxIiOQOaXhx8WssomrgmASbkLNX04mA6d1C05ZiEKLHbNL04mM7djkEu
+        6XS/phcH07mIoq9dkwBfSY6mxwEFl1M4dYx8TGXPaFpcUPy6Y+bjDQ2PD0a2BIMXjmFG1vyHnBfELNDw
+        uQEn3FZPB8rNZnOjhsimHSDuNh36iDbF+yeed3ke0JDZw9OBijGvVCorMH3s6C6fU2N1Vmw2wOCkXZBi
+        p6Q9SZKV/P5iawGWYU9WsFvI6DC7RmLnS5ApZs3ni877E9Nu6e95HoIjdrvyDbnzsuJ/AwXWEXgBysbz
+        XUbOa1y/R5MOXBGdjg/5dHhY9BlgE/Uh3ofBGxDTvlniMbjj0+El1U97NOFD0adBR9PNH88v88mRI7s9
+        a+f9A89zYsoFdovoskm1E2fhqImFE6J3IOtM43crIMRE0+SAmjTtGB3UZi/o4C4TCxva/Ac0XLTEPLaY
+        gYWSh6l856Z9hN9DvhmAZ9DlOm9iy6J3QMOwJeaSwps0756rKfP2wLDoHdBwk+Cn3ZIR7pU83vc7hTMy
+        3ZdVl5HP0OFx0aOAYvbUGr7VNff9f4yZMyQKKLgGfrUMQpziU+/V1HigcA/Mu7iMYr5BU+JDjldMjsEH
+        UM58uR9+g49YjsHp014q/QZ02eSWHbonRQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="pcbPasswordLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOVJREFUSEvt
+        lE0KwjAUhHsHUdSNdxJE8CR1Y8HjdecxXIn5acGFOg/HEFPaGm032oEPymTeC/lpkkF/Jq31pCzLrCiK
+        HBxJDm+HsTFjnwlNNmhmwK0GDdaMxwmFK3BloyYks2TZe5KlW2vPQaMmTkqpEcvbheb7oMEF25WCBUnF
+        8zPwMpa3CwWHoDjlkBO8rZ+JQSaQw3MGVjRjXyfx/EwMlQmMMVP2dcIEcz8TQ/9bVHfIcrsE+RbPz8Cr
+        HLI/LtDu7pqGOdoPwfj6RwtyrxOIsOz+noqnsF3+Y2dJN4/doF9VktwBD5wIt2YZlSoAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="pcbEmailLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAASRJREFUSEvt
+        lb1qAkEUhecpNI2doFikscsbJKQRQXwT+1S+gq1FCglYpQsEfYQQULCxSavg/iO6nrNcYVx3XNe43Q58
+        3NlzmTnMnIFVxUgdruuO8oQGHghzYquCIKhjMos17sHScZwmTzAMw7CMOtaa/+XLsqwSDN5oQGGOkzRQ
+        e2An2q30QQVM+X00IBvQgusr6lrTr8UGXfAE/kQ7MSB70Gcunuf9xnqXmEmWvIGtpp8ZRGDzT1Qe80PX
+        DYyR4QPqe0yPSDQQFrZtP6KacqHWk+yMr/CSAbFAB7k8o640fQXtBbUNmJ2+5oQ0gwhc2UBy+SG+79eg
+        87Uws8Q1R64yECbYuEow/471jGQxIEshqZdIVoPMFAapKD7BPJH/WjFMQ6kDtB1ebbCpChMAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="pcbLogoLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAACMVJREFUeF7tWguMlNUV3trWPkzTaGsfFnZ2lhWUKrGifZJWCTTUR7CokWKjxhis
@@ -159,55 +197,6 @@
         eSnDy9ZocB5B+MwPpHv6EX7JGVGeK8oHzPI5PjylzoPFPMGV1XwegEN1X9DwlkmfKGj3ivTMDEBpXp1v
         xMo/OZizOXwxG3lBNmF1pX2UEsuORBIg7P9bpcvwAx9OYoU3aGVJrENGwl8jeM68Ak0ayPBgTbPoS9wT
         wdPG4y+/XloNf7BazYovFJ+Pc/9ZxhDyKYssssgiiyyyiAc5OZ8BW06SS1AUHLsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="pcbUtenteRegister.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAbZJREFUWEft
-        l78vBFEUhZdoRBCFRBQKyWpoFBIdBYm/QKNQSyQ0OrQaGgWV0j+g0mkUYkWiWIUShWoysju7I9kfvknu
-        JOu5Y8nelyj2JKeRe8735j3zMpvrqhM1m83BOI4ny+XymPzJv4AOVCqVA/yKm6mjKCqWSqUZGfMj4P3A
-        7lvBjj+q1eolnpCIrSjeV6DfnOwGi+2VmJ0oftSAmlnsgsRslDwRxXUXlGUWuyFRG8n5q7AMb0rUTpRG
-        DuQnr0rMTpQ+OJBMcz9MScxOnOuZBlP8JhFbUfzigLLcYLGzErMR/4Q9vFqhAsvyvETtROkh/s2rWGDB
-        fRKzFeW3Dsx1IwzDERm3F8ewp0BbfS2jfhQEwTCQZweausYCF2XUnwBtO+DUVzLiV4B2HHBqv9ufim3e
-        VeCJCzLiT1ww44CeHHDqGlfwsozaivd6CMAWDlqAmuvs0GnyrSjRzkRRntJjnvzdAbVzcmFdkF+Sqr+J
-        D8xRCs5xTQo78Q0PMCfV7QV8mtCXr14DxxzNmiCyldzhrLaoFFiYE4nzgtLFj4wVJWjpI0HpYpvWGbrz
-        ZfpPBNXVf1Au9wl/CSU7w31iogAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="pcbEmailRegister.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAASRJREFUSEvt
-        lb1qAkEUhecpNI2doFikscsbJKQRQXwT+1S+gq1FCglYpQsEfYQQULCxSavg/iO6nrNcYVx3XNe43Q58
-        3NlzmTnMnIFVxUgdruuO8oQGHghzYquCIKhjMos17sHScZwmTzAMw7CMOtaa/+XLsqwSDN5oQGGOkzRQ
-        e2An2q30QQVM+X00IBvQgusr6lrTr8UGXfAE/kQ7MSB70Gcunuf9xnqXmEmWvIGtpp8ZRGDzT1Qe80PX
-        DYyR4QPqe0yPSDQQFrZtP6KacqHWk+yMr/CSAbFAB7k8o640fQXtBbUNmJ2+5oQ0gwhc2UBy+SG+79eg
-        87Uws8Q1R64yECbYuEow/471jGQxIEshqZdIVoPMFAapKD7BPJH/WjFMQ6kDtB1ebbCpChMAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="pcbiPasswordRegister.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOVJREFUSEvt
-        lE0KwjAUhHsHUdSNdxJE8CR1Y8HjdecxXIn5acGFOg/HEFPaGm032oEPymTeC/lpkkF/Jq31pCzLrCiK
-        HBxJDm+HsTFjnwlNNmhmwK0GDdaMxwmFK3BloyYks2TZe5KlW2vPQaMmTkqpEcvbheb7oMEF25WCBUnF
-        8zPwMpa3CwWHoDjlkBO8rZ+JQSaQw3MGVjRjXyfx/EwMlQmMMVP2dcIEcz8TQ/9bVHfIcrsE+RbPz8Cr
-        HLI/LtDu7pqGOdoPwfj6RwtyrxOIsOz+noqnsF3+Y2dJN4/doF9VktwBD5wIt2YZlSoAAAAASUVORK5C
-        YII=
-</value>
-  </data>
-  <data name="pcbVaialLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAjRJREFUWEft
-        lj1PFFEYhRcrKCy0EowxkhiMP8QKEomVNrYYPhQTKhITTWgo0IYQLWw0UUm0ERJ+Ar8AaKgsjTIr+zGL
-        4vIccsYM7F53Z3bVxOxJTmb3zPue+96PufcWeughC0ql0oVKpTJTrVbXee7Cr/BzuVzeQtvgeU8xDu8e
-        ZIr5SxqLYb0FDyhmhedFp3cGjG7BL4k5fAXHKWgwiqJzYhzHw2iKew2TIveJuWmbfMBgAqNDG36gZ5f9
-        KghirhD73jnKve9X2UDjYyT/NB9abhvkzMIf8BCvUcvtgYQhEvegejFrOTPInZMHoxLhOWi5NQjWglPj
-        byzlQr1e78Pjo4t4Yfn3cO81d7F+W25AsVg8z/tJ/w2CBXoVLy1eTccly2EQNA3V+3eWGkDPzvB+U3EU
-        sWA5COJWHduy4LZBz25gWpUxfGq5KRj+O4rjuW6pOzhVxJLlBhA34pgdS2E4MBcZ4se2OQGm7KxjvlkK
-        I22Yg8+08m31C5kKyALPrVa3ev/EcgNqtdo1F7BtqXOcarzp0CdILcI1S2EQ+EDBMLgJpT9DuGg5CGKS
-        z3DCUhg+879DHavBw0cbETFT/htEaiM6oID2tmMafk6CerdqKRe0IPE43orhsuXWUKUkdHwY0ZFH8uAZ
-        Zb4pUURHxzGNzjs3+3GcQItGBlAj8XcvJAkwaHYlu63tlTnuhwN859dp+C76W9i9K1mCf3opTcOfaHIt
-        /6TGoIraRftz1/Ie/mMUCke1loZaQBWlpQAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

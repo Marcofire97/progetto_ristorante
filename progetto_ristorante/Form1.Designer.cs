@@ -29,57 +29,46 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            textBox1 = new TextBox();
+            pcbLogoRegister = new PictureBox();
+            pcbUtenteRegister = new PictureBox();
             panel1 = new Panel();
             panel2 = new Panel();
-            textBox2 = new TextBox();
-            pictureBox3 = new PictureBox();
+            txbEmailRegister = new TextBox();
+            pcbEmailRegister = new PictureBox();
             panel3 = new Panel();
-            textBox3 = new TextBox();
-            pictureBox4 = new PictureBox();
+            txbPasswordRegister = new TextBox();
+            pcbiPasswordRegister = new PictureBox();
             lblLoggaticon = new Label();
-            pictureBox5 = new PictureBox();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            pcbVaialLogin = new PictureBox();
+            btnRegistrati = new Button();
+            txbUtenteRegister = new TextBox();
+            cmbPasswordRegister = new CheckBox();
+            ((System.ComponentModel.ISupportInitialize)pcbLogoRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pcbUtenteRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pcbEmailRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pcbiPasswordRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pcbVaialLogin).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pcbLogoRegister
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(145, 15);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(79, 84);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pcbLogoRegister.Image = (Image)resources.GetObject("pcbLogoRegister.Image");
+            pcbLogoRegister.Location = new Point(145, 15);
+            pcbLogoRegister.Name = "pcbLogoRegister";
+            pcbLogoRegister.Size = new Size(79, 84);
+            pcbLogoRegister.SizeMode = PictureBoxSizeMode.CenterImage;
+            pcbLogoRegister.TabIndex = 0;
+            pcbLogoRegister.TabStop = false;
             // 
-            // pictureBox2
+            // pcbUtenteRegister
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(50, 147);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(29, 33);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(34, 36, 49);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.WhiteSmoke;
-            textBox1.Location = new Point(86, 155);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(224, 22);
-            textBox1.TabIndex = 2;
-            textBox1.Text = "Username";
+            pcbUtenteRegister.Image = (Image)resources.GetObject("pcbUtenteRegister.Image");
+            pcbUtenteRegister.Location = new Point(50, 147);
+            pcbUtenteRegister.Name = "pcbUtenteRegister";
+            pcbUtenteRegister.Size = new Size(29, 33);
+            pcbUtenteRegister.SizeMode = PictureBoxSizeMode.CenterImage;
+            pcbUtenteRegister.TabIndex = 1;
+            pcbUtenteRegister.TabStop = false;
             // 
             // panel1
             // 
@@ -99,27 +88,26 @@
             panel2.Size = new Size(286, 1);
             panel2.TabIndex = 6;
             // 
-            // textBox2
+            // txbEmailRegister
             // 
-            textBox2.BackColor = Color.FromArgb(34, 36, 49);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.WhiteSmoke;
-            textBox2.Location = new Point(86, 241);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(224, 22);
-            textBox2.TabIndex = 5;
-            textBox2.Text = "Email";
+            txbEmailRegister.BackColor = Color.FromArgb(34, 36, 49);
+            txbEmailRegister.BorderStyle = BorderStyle.None;
+            txbEmailRegister.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txbEmailRegister.ForeColor = Color.WhiteSmoke;
+            txbEmailRegister.Location = new Point(86, 241);
+            txbEmailRegister.Name = "txbEmailRegister";
+            txbEmailRegister.Size = new Size(250, 22);
+            txbEmailRegister.TabIndex = 5;
             // 
-            // pictureBox3
+            // pcbEmailRegister
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(50, 233);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(29, 33);
-            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox3.TabIndex = 4;
-            pictureBox3.TabStop = false;
+            pcbEmailRegister.Image = (Image)resources.GetObject("pcbEmailRegister.Image");
+            pcbEmailRegister.Location = new Point(50, 233);
+            pcbEmailRegister.Name = "pcbEmailRegister";
+            pcbEmailRegister.Size = new Size(29, 33);
+            pcbEmailRegister.SizeMode = PictureBoxSizeMode.CenterImage;
+            pcbEmailRegister.TabIndex = 4;
+            pcbEmailRegister.TabStop = false;
             // 
             // panel3
             // 
@@ -130,63 +118,91 @@
             panel3.Size = new Size(286, 1);
             panel3.TabIndex = 9;
             // 
-            // textBox3
+            // txbPasswordRegister
             // 
-            textBox3.BackColor = Color.FromArgb(34, 36, 49);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.ForeColor = Color.WhiteSmoke;
-            textBox3.Location = new Point(85, 325);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(224, 22);
-            textBox3.TabIndex = 8;
-            textBox3.Text = "Password";
+            txbPasswordRegister.BackColor = Color.FromArgb(34, 36, 49);
+            txbPasswordRegister.BorderStyle = BorderStyle.None;
+            txbPasswordRegister.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txbPasswordRegister.ForeColor = Color.WhiteSmoke;
+            txbPasswordRegister.Location = new Point(85, 325);
+            txbPasswordRegister.Name = "txbPasswordRegister";
+            txbPasswordRegister.PasswordChar = '*';
+            txbPasswordRegister.Size = new Size(251, 22);
+            txbPasswordRegister.TabIndex = 8;
+            txbPasswordRegister.TextChanged += txbPasswordRegister_TextChanged;
             // 
-            // pictureBox4
+            // pcbiPasswordRegister
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(50, 317);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(29, 33);
-            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox4.TabIndex = 7;
-            pictureBox4.TabStop = false;
+            pcbiPasswordRegister.Image = (Image)resources.GetObject("pcbiPasswordRegister.Image");
+            pcbiPasswordRegister.Location = new Point(50, 317);
+            pcbiPasswordRegister.Name = "pcbiPasswordRegister";
+            pcbiPasswordRegister.Size = new Size(29, 33);
+            pcbiPasswordRegister.SizeMode = PictureBoxSizeMode.CenterImage;
+            pcbiPasswordRegister.TabIndex = 7;
+            pcbiPasswordRegister.TabStop = false;
             // 
             // lblLoggaticon
             // 
             lblLoggaticon.AutoSize = true;
             lblLoggaticon.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblLoggaticon.ForeColor = Color.White;
-            lblLoggaticon.Location = new Point(102, 449);
+            lblLoggaticon.Location = new Point(102, 471);
             lblLoggaticon.Name = "lblLoggaticon";
             lblLoggaticon.Size = new Size(162, 23);
             lblLoggaticon.TabIndex = 10;
             lblLoggaticon.Text = "Hai già un account?";
             // 
-            // pictureBox5
+            // pcbVaialLogin
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(155, 476);
-            pictureBox5.Margin = new Padding(3, 4, 3, 4);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(56, 53);
-            pictureBox5.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox5.TabIndex = 11;
-            pictureBox5.TabStop = false;
+            pcbVaialLogin.Image = (Image)resources.GetObject("pcbVaialLogin.Image");
+            pcbVaialLogin.Location = new Point(154, 498);
+            pcbVaialLogin.Margin = new Padding(3, 4, 3, 4);
+            pcbVaialLogin.Name = "pcbVaialLogin";
+            pcbVaialLogin.Size = new Size(56, 53);
+            pcbVaialLogin.SizeMode = PictureBoxSizeMode.CenterImage;
+            pcbVaialLogin.TabIndex = 11;
+            pcbVaialLogin.TabStop = false;
+            pcbVaialLogin.Click += pcbVaialLogin_Click;
             // 
-            // button1
+            // btnRegistrati
             // 
-            button1.BackColor = Color.FromArgb(78, 184, 206);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.FromArgb(34, 36, 49);
-            button1.Location = new Point(85, 381);
-            button1.Name = "button1";
-            button1.Size = new Size(197, 54);
-            button1.TabIndex = 12;
-            button1.Text = "Registrati";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnRegistrati.BackColor = Color.FromArgb(78, 184, 206);
+            btnRegistrati.FlatStyle = FlatStyle.Flat;
+            btnRegistrati.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRegistrati.ForeColor = Color.FromArgb(34, 36, 49);
+            btnRegistrati.Location = new Point(85, 403);
+            btnRegistrati.Name = "btnRegistrati";
+            btnRegistrati.Size = new Size(197, 54);
+            btnRegistrati.TabIndex = 12;
+            btnRegistrati.Text = "Registrati";
+            btnRegistrati.UseVisualStyleBackColor = false;
+            btnRegistrati.Click += btnRegistrati_Click;
+            // 
+            // txbUtenteRegister
+            // 
+            txbUtenteRegister.BackColor = Color.FromArgb(34, 36, 49);
+            txbUtenteRegister.BorderStyle = BorderStyle.None;
+            txbUtenteRegister.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txbUtenteRegister.ForeColor = Color.WhiteSmoke;
+            txbUtenteRegister.Location = new Point(86, 155);
+            txbUtenteRegister.Name = "txbUtenteRegister";
+            txbUtenteRegister.Size = new Size(250, 22);
+            txbUtenteRegister.TabIndex = 2;
+            txbUtenteRegister.TextChanged += txbUtenteRegister_TextChanged;
+            // 
+            // cmbPasswordRegister
+            // 
+            cmbPasswordRegister.AutoSize = true;
+            cmbPasswordRegister.Cursor = Cursors.Hand;
+            cmbPasswordRegister.FlatStyle = FlatStyle.Flat;
+            cmbPasswordRegister.ForeColor = Color.WhiteSmoke;
+            cmbPasswordRegister.Location = new Point(50, 368);
+            cmbPasswordRegister.Name = "cmbPasswordRegister";
+            cmbPasswordRegister.Size = new Size(138, 24);
+            cmbPasswordRegister.TabIndex = 27;
+            cmbPasswordRegister.Text = "Mostra Password";
+            cmbPasswordRegister.UseVisualStyleBackColor = true;
+            cmbPasswordRegister.CheckedChanged += cmbPasswordRegister_CheckedChanged;
             // 
             // Form1
             // 
@@ -194,47 +210,49 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 36, 49);
             ClientSize = new Size(385, 563);
-            Controls.Add(button1);
-            Controls.Add(pictureBox5);
+            Controls.Add(cmbPasswordRegister);
+            Controls.Add(btnRegistrati);
+            Controls.Add(pcbVaialLogin);
             Controls.Add(lblLoggaticon);
             Controls.Add(panel3);
-            Controls.Add(textBox3);
-            Controls.Add(pictureBox4);
+            Controls.Add(txbPasswordRegister);
+            Controls.Add(pcbiPasswordRegister);
             Controls.Add(panel2);
-            Controls.Add(textBox2);
-            Controls.Add(pictureBox3);
+            Controls.Add(txbEmailRegister);
+            Controls.Add(pcbEmailRegister);
             Controls.Add(panel1);
-            Controls.Add(textBox1);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(txbUtenteRegister);
+            Controls.Add(pcbUtenteRegister);
+            Controls.Add(pcbLogoRegister);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pcbLogoRegister).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pcbUtenteRegister).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pcbEmailRegister).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pcbiPasswordRegister).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pcbVaialLogin).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private TextBox textBox1;
+        private PictureBox pcbLogoRegister;
+        private PictureBox pcbUtenteRegister;
         private Panel panel1;
         private Panel panel2;
-        private TextBox textBox2;
-        private PictureBox pictureBox3;
+        private TextBox txbEmailRegister;
+        private PictureBox pcbEmailRegister;
         private Panel panel3;
-        private TextBox textBox3;
-        private PictureBox pictureBox4;
+        private TextBox txbPasswordRegister;
+        private PictureBox pcbiPasswordRegister;
         private Label lblLoggaticon;
-        private PictureBox pictureBox5;
-        private Button button1;
+        private PictureBox pcbVaialLogin;
+        private Button btnRegistrati;
+        private TextBox txbUtenteRegister;
+        private CheckBox cmbPasswordRegister;
     }
 }
