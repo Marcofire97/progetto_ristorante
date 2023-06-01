@@ -2,7 +2,9 @@
 using System.Net.Mail;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Text.RegularExpressions;
+using System.Security.Cryptography;
 
 namespace progetto_ristorante
 {
@@ -11,21 +13,26 @@ namespace progetto_ristorante
 		[DllImport("wininet.dll")]
 		private static extern bool InternetGetConnectedState(out int descrizione, int valoreriservato);
 
-		public static bool controllo_email(string email, string username)
+		public static bool controllo_email(string email, string? username, int caso)
 		{
+			//caso 0 = register - caso 1 = login
 			Utenti_DB db = new Utenti_DB();
-			foreach (var utente in db.GetUtenti())
-			{
-				if(utente.Username.Trim() == username.Trim())
-				{
-					MessageBox.Show("L'username non è disponibile", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
-					return false;
-				}
 
-				if (utente.Email.Trim() == email.Trim())
+			if(caso == 0)
+			{
+				foreach (var utente in db.GetUtenti())
 				{
-					MessageBox.Show("L'email è gia stata usata", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
-					return false;
+					if (utente.Username.Trim() == username.Trim())
+					{
+						MessageBox.Show("L'username non è disponibile", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						return false;
+					}
+
+					if (utente.Email.Trim() == email.Trim())
+					{
+						MessageBox.Show("L'email è gia stata usata", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						return false;
+					}
 				}
 			}
 
@@ -35,6 +42,14 @@ namespace progetto_ristorante
 			{
 				MessageBox.Show("Inserire un indirizzo email", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return false;
+			}
+			if(caso == 0)
+			{
+				if (string.IsNullOrEmpty(username))
+				{
+					MessageBox.Show("Inserire uno username", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return false;
+				}
 			}
 
 			try
@@ -86,6 +101,15 @@ namespace progetto_ristorante
 			return true;
 		}
 
-		 
+		public static byte[] HashPassword(string passwordClear)
+		{
+			using (SHA256 hash = SHA256.Create())
+			{
+				byte[] passwordBytes = Encoding.UTF8.GetBytes(passwordClear);
+				byte[] hashBytes = hash.ComputeHash(passwordBytes);
+
+				return hashBytes;
+			}
+		}
 	}
 }

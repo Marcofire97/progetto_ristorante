@@ -12,23 +12,55 @@ namespace progetto_ristorante
 
         public Ordinazioni_DB()
         {
-            db = new SqlConnection(STRINGA_CONNESSIONE);
-        }
+			try
+			{
+				db = new SqlConnection(STRINGA_CONNESSIONE);
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				Environment.Exit(0);
+			}
+		}
 
         public List<Ordinazioni> GetOrdinazioni()
         {
-            return db.Query<Ordinazioni>("SELECT * FROM Ordinazioni").ToList();
+            try
+            {
+				return db.Query<Ordinazioni>("SELECT * FROM Ordinazioni").ToList();
+			}
+            catch(Exception ex)
+            {
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return null;
+			}
         }
 
         public List<Ordinazioni> GetOrdinazioni(Ordinazioni o)
         {
-            return db.Query<Ordinazioni>($"SELECT * FROM Ordinazioni WHERE UtenteID = '{o.UtenteID}'").ToList();
+            try
+            {
+				return db.Query<Ordinazioni>($"SELECT * FROM Ordinazioni WHERE UtenteID = '{o.UtenteID}'").ToList();
+			}
+            catch(Exception ex)
+            {
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return null;
+			}
+
         }
 
         public void AddOrdinazione(Ordinazioni o)
         {
-            db.Execute("INSERT INTO Ordinazioni (UtenteID, Email, DataOrdine, Prodotto, Quantita) VALUES (@UtenteID, (SELECT EMAIL FROM Utenti WHERE ID = @UtenteID), @DataOrdine, @Prodotto, @Quantita)", o);
-        }
+			try
+			{
+				db.Execute("INSERT INTO Ordinazioni (UtenteID, Email, DataOrdine, Prodotto, Quantita) VALUES (@UtenteID, (SELECT EMAIL FROM Utenti WHERE ID = @UtenteID), @DataOrdine, @Prodotto, @Quantita)", o);
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
       
     }
 }

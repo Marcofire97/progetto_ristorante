@@ -6,16 +6,20 @@ namespace progetto_ristorante
     public partial class Form1 : Form
     {
 
+        Utenti_DB db;
         public Form1()
         {
             InitializeComponent();
-        }
+			db = new Utenti_DB();
+		}
 
         private void btnRegistrati_Click(object sender, EventArgs e)
         {
-            if (Utilita.controllo_email(txbEmailRegister.Text, txbUtenteRegister.Text) && Utilita.controllo_password(txbPasswordRegister.Text) && Utilita.controllo_rete())
+            if (Utilita.controllo_email(txbEmailRegister.Text, txbUtenteRegister.Text, 0) && Utilita.controllo_password(txbPasswordRegister.Text) && Utilita.controllo_rete())
             {
-                
+                db.AddUtente(new(txbEmailRegister.Text, txbUtenteRegister.Text, txbPasswordRegister.Text));
+                MessageBox.Show($"Benvenuto {txbUtenteRegister.Text}");
+                //rimanda alla pagina principale
             }
 
         }

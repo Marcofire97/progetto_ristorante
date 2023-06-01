@@ -27,22 +27,11 @@ namespace progetto_ristorante
 
 		public Utenti(string email, string username, string password)
 		{
-			byte[] passwordhashata = HashPassword(password);
+			byte[] passwordhashata = Utilita.HashPassword(password);
 			string passwordhashatastring = BitConverter.ToString(passwordhashata).Replace("-", string.Empty);
 			this.Email = email;
 			this.Username = username;
 			this.Password = passwordhashatastring;
-		}
-
-		private byte[] HashPassword(string passwordClear)
-		{
-			using (SHA256 hash = SHA256.Create())
-			{
-				byte[] passwordBytes = Encoding.UTF8.GetBytes(passwordClear);
-				byte[] hashBytes = hash.ComputeHash(passwordBytes);
-
-				return hashBytes;
-			}
 		}
 	}
 }

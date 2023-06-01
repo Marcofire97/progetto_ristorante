@@ -17,33 +17,78 @@ namespace progetto_ristorante
 
 		public Utenti_DB()
 		{
-			db = new SqlConnection(STRINGA_CONNESSIONE);
+			try
+			{
+				db = new SqlConnection(STRINGA_CONNESSIONE);
+			}
+			catch(Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				Environment.Exit(0);
+			}
 		}
 
 		public List<Utenti> GetUtenti()
 		{
-			return db.Query<Utenti>("SELECT * FROM Utenti").ToList();
+			try
+			{
+				return db.Query<Utenti>("SELECT * FROM Utenti").ToList();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return null;
+			}
 		}
 
-		public List<Utenti> GetUtenti(Utenti u)
+		public Utenti GetUtenti(string email)
 		{
-			return db.Query<Utenti>($"SELECT * FROM Utenti WHERE EMAIL = '{u.Email}'").ToList();
+			try
+			{
+				return db.Query<Utenti>($"SELECT * FROM Utenti WHERE EMAIL = '{email}'").FirstOrDefault();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return null;
+			}
 		}
 
 
 		public void AddUtente(Utenti u)
 		{
-			db.Execute("INSERT INTO Utenti (EMAIL, USERNAME, PASSWORD) VALUES (@Email, @Username, @Password)", u);
+			try
+			{
+				db.Execute("INSERT INTO Utenti (EMAIL, USERNAME, PASSWORD) VALUES (@Email, @Username, @Password)", u);
+			}
+			catch(Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
 
 		public void DeleteUtente(Utenti u)
 		{
-			db.Execute("DELETE FROM Utenti WHERE EMAIL = @Email", u);
+			try
+			{
+				db.Execute("DELETE FROM Utenti WHERE EMAIL = @Email", u);
+			}
+			catch(Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
 
 		public void UpdateUtente(Utenti u)
 		{
-			db.Execute("UPDATE Utenti SET EMAIL = @Email, USERNAME = @Username, PASSWORD = @Password WHERE ID = @ID", u);
+			try
+			{
+				db.Execute("UPDATE Utenti SET EMAIL = @Email, USERNAME = @Username, PASSWORD = @Password WHERE ID = @ID", u);
+			}
+			catch(Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
 
 		
