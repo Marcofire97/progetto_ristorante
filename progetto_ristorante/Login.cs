@@ -20,7 +20,7 @@
 
         private void txbPassword_TextChanged(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void cmbPasswordLogin_CheckedChanged(object sender, EventArgs e)
