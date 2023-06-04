@@ -1,64 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!--
-    Microsoft ResX Schema 
-
-    Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
-    associated with the data types.
-
-    Example:
-
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-
-    There are any number of "resheader" rows that contain simple
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
+﻿<root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -22640,21 +22580,6 @@
         tdLPrSSPlbTqXbyG6SCY/1ajVFroRR4E/xo8L24oBs+LG4rB8+KGYvC8uxjemm6+X/5A10p2yVtlF8Pa
         e+haSes9v+mt0mqsne/LTyfXp9C19K3I9SzP9UGXVmPtfH9nmnJv2kdtmsF7fdBlduPCiAXYys3BL8Cb
         KTUeb7bG5MSU5pCOWW4O/oGJ/MjMh6lmOoLeTbMfmQmCIAj+N6vVF6lVEB9V/RLTAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="MaximizeButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAhNJREFUeF7t
-        m21KA0EQRPPHW4mIP/Vc6qlExHNExA9EL6HdMS1hmKKtTc26Y+ZBgXnrVM+u4i7BrAaDwWAwqHJkubY8
-        Wj47je/9yuLnQuMnXyvtMZcWmleLLz7dvOqTM4ufw/PmFUlcvd6ZfB7jAmzTO/ILcGF5sMTxpWRtObeU
-        xHEatPDJEseWFr/tlcQxGrRwcmFj5PuVFzZGvl95YWPk+5UXNka+X3lhY+T7lRc2Rr5ftnCu5wP2fo98
-        Cls45/MBc79HPoUtRF4NOx/5FLYQeTXsfORT2MLwc6WE9SlsYfi5UsL6FLYQeTXsfORT2ELk1bDzkU9h
-        C5FXw85HPoUtRF4NOx/5FLYQeTXsfORT2ELk1bDzkU9hC5FXw85HPoUtRF4NOx/5FLYQeTXsfORT2ELk
-        1bDzkU9hC5FXw85HPoUtRF4NOx/5FLYQeTXsfORT2ELk1bDzkU9hC5FXw85HPoUtRF4NOx/5FLbwxRLH
-        WsffgC2JYyXIp7CF/rZ4/FtNy/iFXuTb4n+NfL/ywsbI9ysvbIx8v/LCxsj3u0/hreXm+8sf1K5kn/1W
-        2aew9j1qV4K+5zdrq6CFtft9+dMJv4va+W9F+AjzfJCCFtbu93eWXe4tc7jdPbDPBymTFy6McQG2oTn4
-        C/Bm8YXHm1d9cmLxc/C/WTQH/4GJ+MjMh6VW2kPeLZM/MjMYDAaD/81q9QWhK4en17MfGAAAAABJRU5E
-        rkJggg==
 </value>
   </data>
   <data name="CloseButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
