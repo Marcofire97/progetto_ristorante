@@ -38,7 +38,7 @@
 			NumberAddresslabel = new Label();
 			PostalCodeAddressLabel = new Label();
 			StreetLabel = new Label();
-			btnVaiAlCarrello = new Button();
+			btnTerminaordine = new Button();
 			lblCarrello = new Label();
 			pcbTornaHomeDelivery = new PictureBox();
 			txbNoteAggiuntive = new TextBox();
@@ -65,7 +65,6 @@
 			AddressGroupBox.TabIndex = 7;
 			AddressGroupBox.TabStop = false;
 			AddressGroupBox.Text = "Indirizzo:";
-			AddressGroupBox.Enter += AddressGroupBox_Enter;
 			// 
 			// textBox2
 			// 
@@ -135,21 +134,21 @@
 			StreetLabel.TabIndex = 0;
 			StreetLabel.Text = "Strada:";
 			// 
-			// btnVaiAlCarrello
+			// btnTerminaordine
 			// 
-			btnVaiAlCarrello.BackColor = Color.FromArgb(255, 199, 44);
-			btnVaiAlCarrello.FlatAppearance.BorderSize = 0;
-			btnVaiAlCarrello.FlatStyle = FlatStyle.Flat;
-			btnVaiAlCarrello.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			btnVaiAlCarrello.ForeColor = Color.White;
-			btnVaiAlCarrello.Location = new Point(3, 462);
-			btnVaiAlCarrello.Margin = new Padding(3, 4, 3, 4);
-			btnVaiAlCarrello.Name = "btnVaiAlCarrello";
-			btnVaiAlCarrello.Size = new Size(984, 31);
-			btnVaiAlCarrello.TabIndex = 6;
-			btnVaiAlCarrello.Text = "Termina ordine";
-			btnVaiAlCarrello.UseVisualStyleBackColor = false;
-			btnVaiAlCarrello.Click += btnVaiAlCarrello_Click;
+			btnTerminaordine.BackColor = Color.FromArgb(255, 199, 44);
+			btnTerminaordine.FlatAppearance.BorderSize = 0;
+			btnTerminaordine.FlatStyle = FlatStyle.Flat;
+			btnTerminaordine.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			btnTerminaordine.ForeColor = Color.White;
+			btnTerminaordine.Location = new Point(3, 462);
+			btnTerminaordine.Margin = new Padding(3, 4, 3, 4);
+			btnTerminaordine.Name = "btnTerminaordine";
+			btnTerminaordine.Size = new Size(984, 31);
+			btnTerminaordine.TabIndex = 6;
+			btnTerminaordine.Text = "Termina ordine";
+			btnTerminaordine.UseVisualStyleBackColor = false;
+			btnTerminaordine.Click += btnTerminaordine_Click;
 			// 
 			// lblCarrello
 			// 
@@ -194,7 +193,7 @@
 			Controls.Add(pcbTornaHomeDelivery);
 			Controls.Add(lblCarrello);
 			Controls.Add(AddressGroupBox);
-			Controls.Add(btnVaiAlCarrello);
+			Controls.Add(btnTerminaordine);
 			FormBorderStyle = FormBorderStyle.None;
 			Name = "Delivery";
 			StartPosition = FormStartPosition.CenterScreen;
@@ -216,7 +215,7 @@
 		private Label NumberAddresslabel;
 		private Label PostalCodeAddressLabel;
 		private Label StreetLabel;
-		private Button btnVaiAlCarrello;
+		private Button btnTerminaordine;
 		private Label lblCarrello;
 		private PictureBox pcbTornaHomeDelivery;
 		private TextBox txbNoteAggiuntive;

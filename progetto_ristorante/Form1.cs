@@ -19,6 +19,8 @@ namespace progetto_ristorante
             {
                 db.AddUtente(new(txbEmailRegister.Text, txbUtenteRegister.Text, txbPasswordRegister.Text));
                 MessageBox.Show($"Benvenuto {txbUtenteRegister.Text}");
+                Utenti utente = db.GetUtenti(txbEmailRegister.Text);
+                Utilita.id_utente = utente.ID;
 
                 new Ristorante().Show();
                 this.Hide();

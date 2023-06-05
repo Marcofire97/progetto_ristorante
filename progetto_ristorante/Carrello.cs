@@ -34,11 +34,34 @@ namespace progetto_ristorante
 			groupBox1.Controls.Add(elem2);
 			*/
 
+			Utilita.elementi_carrello.Clear();
+			for (int i = 0; i < Utilita.ordinazioni.Count; i++)
+			{
+				Utilita.elementi_carrello.Add(new(Utilita.ordinazioni[i]));
+			}
+			int x = 20;
+			int y = 50;
+			foreach (var ordine in Utilita.elementi_carrello)
+			{
+				ordine.Location = new Point(x, y);
+				groupBox1.Controls.Add(ordine);
+				y += 50;
+			}
+			if(Utilita.elementi_carrello.Count>0)
+			{
+				button1.Enabled = true;
+			}
 		}
 
 		private void pcbTornaHomeCarrello_Click(object sender, EventArgs e)
 		{
 			new Ristorante().Show();
+			this.Hide();
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			new Delivery().Show();
 			this.Hide();
 		}
 	}

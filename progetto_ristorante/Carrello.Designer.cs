@@ -80,12 +80,14 @@
 			// 
 			// button1
 			// 
+			button1.Enabled = false;
 			button1.Location = new Point(465, 575);
 			button1.Name = "button1";
 			button1.Size = new Size(120, 29);
 			button1.TabIndex = 15;
 			button1.Text = "ORDINA";
 			button1.UseVisualStyleBackColor = true;
+			button1.Click += button1_Click;
 			// 
 			// Carrello
 			// 
@@ -108,9 +110,9 @@
 		#endregion
 		private Label lblCarrello;
 		private PictureBox pcbTornaHomeCarrello;
-		private GroupBox groupBox1;
 		private ElementoCarrello elementoCarrello1;
 		private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
 		private Button button1;
+		public GroupBox groupBox1;
 	}
 }

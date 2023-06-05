@@ -10,7 +10,13 @@ namespace progetto_ristorante
 {
     internal class Utilita
     {
+		public static int id_utente;
+		public static int N_acquisti = 0;
+		public static string bonus_5, bonus_10, bonus_20, tempo_rimasto_giornaliero;
+		public static List<Ordinazioni> ordinazioni = new List<Ordinazioni>();
+		public static List<ElementoCarrello> elementi_carrello = new List<ElementoCarrello>();
 		[DllImport("wininet.dll")]
+
 		private static extern bool InternetGetConnectedState(out int descrizione, int valoreriservato);
 
 		public static bool controllo_email(string email, string? username, int caso)
@@ -99,6 +105,19 @@ namespace progetto_ristorante
 				return false;
 			}
 			return true;
+		}
+
+		public static bool controllo_carrello(string prodotto)
+		{
+			foreach (var ordine in Utilita.ordinazioni)
+			{
+				if (ordine.Prodotto == prodotto)
+				{
+					MessageBox.Show("Il prodotto è già nel carrello");
+					return true;
+				}
+			}
+			return false;
 		}
 
 		public static byte[] HashPassword(string passwordClear)

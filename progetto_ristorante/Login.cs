@@ -61,6 +61,7 @@ namespace progetto_ristorante
                     if (passwordhashatastring == utente.Password && utente.Email == txbEmail.Text)
                     {
                         MessageBox.Show("Bentornato!");
+                        Utilita.id_utente = utente.ID;
 
                         new Ristorante().Show();
                         this.Hide();

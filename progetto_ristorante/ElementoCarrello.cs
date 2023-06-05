@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -64,13 +65,31 @@ namespace progetto_ristorante
 
 		private void btnRimuoviProdotto_Click_1(object sender, EventArgs e)
 		{
+			for(int i=0; i<Utilita.ordinazioni.Count; i++)
+			{
+				if (Utilita.ordinazioni[i].Prodotto == lblNomeProdotto.Text)
+				{
+					Utilita.ordinazioni.RemoveAt(i);
+					Utilita.elementi_carrello.RemoveAt(i);
+					break;
+				}
+			}
 			this.Parent.Controls.Remove(this);
+			aggiorna();
+
 		}
 
 		private void pictureBox2_Click_1(object sender, EventArgs e)
 		{
 			pr.Quantita+=1;
 			lblquantitàprodotto.Text = "(" + pr.Quantita.ToString() + ")";
+		}
+
+		private void aggiorna()
+		{
+			new Carrello().Show();
+			Carrello carrello = Application.OpenForms.OfType<Carrello>().FirstOrDefault();
+			carrello?.Close();
 		}
 	}
 }

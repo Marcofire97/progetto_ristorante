@@ -4,6 +4,7 @@ namespace progetto_ristorante
 {
 	public partial class Ristorante : Form
 	{
+		DateTime data = DateTime.Now;
 		public Ristorante()
 		{
 			InitializeComponent();
@@ -59,7 +60,10 @@ namespace progetto_ristorante
 
 		private void btnOrdinaOraPromo_Click(object sender, EventArgs e)
 		{
-
+			if (!Utilita.controllo_carrello("Cheeseburger"))
+			{
+				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Cheeseburger", 1, null, 12));
+			}
 		}
 
 		private void ShoppingCart_Click(object sender, EventArgs e)
