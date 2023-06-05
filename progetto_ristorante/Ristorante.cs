@@ -100,5 +100,17 @@ namespace progetto_ristorante
             new Delivery().Show();
             this.Hide();
         }
+
+        private void btnVaiAlleImpostazioni_Click(object sender, EventArgs e)
+        {
+            new Cliente().Show();
+            this.Hide();
+        }
+
+        private void btnVaiEatIn_Click(object sender, EventArgs e)
+        {
+            new EatIn().Show();
+            this.Hide();
+        }
     }
 }

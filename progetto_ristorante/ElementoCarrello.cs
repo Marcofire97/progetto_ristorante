@@ -12,17 +12,16 @@ using System.Windows.Forms;
 
 namespace progetto_ristorante
 {
-	public partial class ElementoCarrello : UserControl
-	{
+    public partial class ElementoCarrello : UserControl
+    {
 
-		private Ordinazioni pr { get; set; }
+        private Ordinazioni pr { get; set; }
 
-		public ElementoCarrello(Ordinazioni pr)
+        /*public ElementoCarrello(Ordinazioni pr)
 		{
 			InitializeComponent();
 			this.pr = pr;
-		}
-
+		} 
 		public Image immagine_prodotto
 		{
 			get { return pictureBox1.Image; }
@@ -69,6 +68,6 @@ namespace progetto_ristorante
 		{
 		}
 
-
-	}
+		*/
+    }
 }

@@ -10,8 +10,8 @@ namespace progetto_ristorante
         public Form1()
         {
             InitializeComponent();
-			db = new Utenti_DB();
-		}
+            db = new Utenti_DB();
+        }
 
         private void btnRegistrati_Click(object sender, EventArgs e)
         {
@@ -19,7 +19,9 @@ namespace progetto_ristorante
             {
                 db.AddUtente(new(txbEmailRegister.Text, txbUtenteRegister.Text, txbPasswordRegister.Text));
                 MessageBox.Show($"Benvenuto {txbUtenteRegister.Text}");
-                //rimanda alla pagina principale
+
+                new Ristorante().Show();
+                this.Hide();
             }
 
         }
@@ -32,7 +34,14 @@ namespace progetto_ristorante
 
         private void txbPasswordRegister_TextChanged(object sender, EventArgs e)
         {
+            string input = txbPasswordRegister.Text;
+            string asciiPattern = @"^[\x00-\x7F]*$";
 
+            if (!Regex.IsMatch(input, asciiPattern))
+            {
+                txbPasswordRegister.Text = string.Empty;
+                MessageBox.Show("Sono ammessi solo caratteri ASCII.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void cmbPasswordRegister_CheckedChanged(object sender, EventArgs e)
@@ -50,11 +59,23 @@ namespace progetto_ristorante
         private void txbUtenteRegister_TextChanged(object sender, EventArgs e)
         {
             string input = txbUtenteRegister.Text;
-            string asciiPattern = @"^[\x00-\x7F]*$"; 
+            string asciiPattern = @"^[\x00-\x7F]*$";
 
             if (!Regex.IsMatch(input, asciiPattern))
             {
-                txbUtenteRegister.Text = string.Empty; 
+                txbUtenteRegister.Text = string.Empty;
+                MessageBox.Show("Sono ammessi solo caratteri ASCII.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txbEmailRegister_TextChanged(object sender, EventArgs e)
+        {
+            string input = txbEmailRegister.Text;
+            string asciiPattern = @"^[\x00-\x7F]*$";
+
+            if (!Regex.IsMatch(input, asciiPattern))
+            {
+                txbEmailRegister.Text = string.Empty;
                 MessageBox.Show("Sono ammessi solo caratteri ASCII.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

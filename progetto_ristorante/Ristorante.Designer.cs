@@ -33,12 +33,12 @@
             TwitterButton = new Button();
             InstagramButton = new Button();
             SidePanel = new Panel();
-            CustomersButton = new Button();
+            btnVaiAlleImpostazioni = new Button();
             btnVaiOfferte = new Button();
             FacebookButton = new Button();
             btnVaiAlDelivery = new Button();
             CollectionButton = new Button();
-            EatButton = new Button();
+            btnVaiEatIn = new Button();
             HomeButton = new Button();
             TakeButton = new Button();
             MainLogoPainel = new Panel();
@@ -70,12 +70,12 @@
             MainPanel.Controls.Add(TwitterButton);
             MainPanel.Controls.Add(InstagramButton);
             MainPanel.Controls.Add(SidePanel);
-            MainPanel.Controls.Add(CustomersButton);
+            MainPanel.Controls.Add(btnVaiAlleImpostazioni);
             MainPanel.Controls.Add(btnVaiOfferte);
             MainPanel.Controls.Add(FacebookButton);
             MainPanel.Controls.Add(btnVaiAlDelivery);
             MainPanel.Controls.Add(CollectionButton);
-            MainPanel.Controls.Add(EatButton);
+            MainPanel.Controls.Add(btnVaiEatIn);
             MainPanel.Controls.Add(HomeButton);
             MainPanel.Controls.Add(TakeButton);
             MainPanel.Dock = DockStyle.Left;
@@ -135,21 +135,25 @@
             SidePanel.Size = new Size(11, 76);
             SidePanel.TabIndex = 3;
             // 
-            // CustomersButton
+            // btnVaiAlleImpostazioni
             // 
-            CustomersButton.FlatAppearance.BorderSize = 0;
-            CustomersButton.FlatStyle = FlatStyle.Flat;
-            CustomersButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CustomersButton.ForeColor = Color.White;
-            CustomersButton.Image = (Image)resources.GetObject("CustomersButton.Image");
-            CustomersButton.Location = new Point(14, 564);
-            CustomersButton.Margin = new Padding(3, 4, 3, 4);
-            CustomersButton.Name = "CustomersButton";
-            CustomersButton.Size = new Size(189, 72);
-            CustomersButton.TabIndex = 3;
-            CustomersButton.Text = "      Cliente";
-            CustomersButton.TextImageRelation = TextImageRelation.ImageBeforeText;
-            CustomersButton.UseVisualStyleBackColor = true;
+            btnVaiAlleImpostazioni.FlatAppearance.BorderColor = Color.FromArgb(41, 39, 40);
+            btnVaiAlleImpostazioni.FlatAppearance.BorderSize = 0;
+            btnVaiAlleImpostazioni.FlatAppearance.MouseDownBackColor = Color.FromArgb(41, 39, 40);
+            btnVaiAlleImpostazioni.FlatAppearance.MouseOverBackColor = Color.FromArgb(41, 39, 40);
+            btnVaiAlleImpostazioni.FlatStyle = FlatStyle.Flat;
+            btnVaiAlleImpostazioni.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVaiAlleImpostazioni.ForeColor = Color.White;
+            btnVaiAlleImpostazioni.Image = (Image)resources.GetObject("btnVaiAlleImpostazioni.Image");
+            btnVaiAlleImpostazioni.Location = new Point(14, 564);
+            btnVaiAlleImpostazioni.Margin = new Padding(3, 4, 3, 4);
+            btnVaiAlleImpostazioni.Name = "btnVaiAlleImpostazioni";
+            btnVaiAlleImpostazioni.Size = new Size(189, 72);
+            btnVaiAlleImpostazioni.TabIndex = 3;
+            btnVaiAlleImpostazioni.Text = "      Cliente";
+            btnVaiAlleImpostazioni.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnVaiAlleImpostazioni.UseVisualStyleBackColor = true;
+            btnVaiAlleImpostazioni.Click += btnVaiAlleImpostazioni_Click;
             // 
             // btnVaiOfferte
             // 
@@ -225,25 +229,30 @@
             CollectionButton.Name = "CollectionButton";
             CollectionButton.Size = new Size(189, 72);
             CollectionButton.TabIndex = 3;
-            CollectionButton.Text = "      Collection";
+            CollectionButton.Text = "      Collezione";
             CollectionButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             CollectionButton.UseVisualStyleBackColor = true;
             // 
-            // EatButton
+            // btnVaiEatIn
             // 
-            EatButton.FlatAppearance.BorderSize = 0;
-            EatButton.FlatStyle = FlatStyle.Flat;
-            EatButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            EatButton.ForeColor = Color.White;
-            EatButton.Image = (Image)resources.GetObject("EatButton.Image");
-            EatButton.Location = new Point(14, 164);
-            EatButton.Margin = new Padding(3, 4, 3, 4);
-            EatButton.Name = "EatButton";
-            EatButton.Size = new Size(189, 72);
-            EatButton.TabIndex = 3;
-            EatButton.Text = "      Eat-in";
-            EatButton.TextImageRelation = TextImageRelation.ImageBeforeText;
-            EatButton.UseVisualStyleBackColor = true;
+            btnVaiEatIn.Cursor = Cursors.Hand;
+            btnVaiEatIn.FlatAppearance.BorderColor = Color.FromArgb(41, 39, 40);
+            btnVaiEatIn.FlatAppearance.BorderSize = 0;
+            btnVaiEatIn.FlatAppearance.MouseDownBackColor = Color.FromArgb(41, 39, 40);
+            btnVaiEatIn.FlatAppearance.MouseOverBackColor = Color.FromArgb(41, 39, 40);
+            btnVaiEatIn.FlatStyle = FlatStyle.Flat;
+            btnVaiEatIn.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVaiEatIn.ForeColor = Color.White;
+            btnVaiEatIn.Image = (Image)resources.GetObject("btnVaiEatIn.Image");
+            btnVaiEatIn.Location = new Point(14, 164);
+            btnVaiEatIn.Margin = new Padding(3, 4, 3, 4);
+            btnVaiEatIn.Name = "btnVaiEatIn";
+            btnVaiEatIn.Size = new Size(189, 72);
+            btnVaiEatIn.TabIndex = 3;
+            btnVaiEatIn.Text = "      Eat-in";
+            btnVaiEatIn.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnVaiEatIn.UseVisualStyleBackColor = true;
+            btnVaiEatIn.Click += btnVaiEatIn_Click;
             // 
             // HomeButton
             // 
@@ -514,12 +523,12 @@
         private Panel MainPanel;
         private Button InstagramButton;
         private Panel SidePanel;
-        private Button CustomersButton;
+        private Button btnVaiAlleImpostazioni;
         private Button btnVaiOfferte;
         private Button FacebookButton;
         private Button btnVaiAlDelivery;
         private Button CollectionButton;
-        private Button EatButton;
+        private Button btnVaiEatIn;
         private Button HomeButton;
         private Button TakeButton;
         private Panel MainLogoPainel;

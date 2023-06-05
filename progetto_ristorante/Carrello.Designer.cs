@@ -73,10 +73,10 @@
 			// 
 			// elementoCarrello1
 			// 
-			elementoCarrello1.immagine_prodotto = (Image)resources.GetObject("elementoCarrello1.immagine_prodotto");
+			//elementoCarrello1.immagine_prodotto = (Image)resources.GetObject("elementoCarrello1.immagine_prodotto");
 			elementoCarrello1.Location = new Point(56, 37);
 			elementoCarrello1.Name = "elementoCarrello1";
-			elementoCarrello1.nome_prodotto = "Hamburger di pollo";
+			// elementoCarrello1.nome_prodotto = "Hamburger di pollo";
 			elementoCarrello1.Size = new Size(804, 86);
 			elementoCarrello1.TabIndex = 0;
 			// 

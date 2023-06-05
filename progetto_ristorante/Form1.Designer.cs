@@ -98,6 +98,7 @@
             txbEmailRegister.Name = "txbEmailRegister";
             txbEmailRegister.Size = new Size(250, 22);
             txbEmailRegister.TabIndex = 5;
+            txbEmailRegister.TextChanged += txbEmailRegister_TextChanged;
             // 
             // pcbEmailRegister
             // 
