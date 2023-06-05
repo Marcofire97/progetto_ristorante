@@ -12,20 +12,25 @@ using System.Windows.Forms;
 
 namespace progetto_ristorante
 {
-    public partial class ElementoCarrello : UserControl
-    {
+	public partial class ElementoCarrello : UserControl
+	{
 
-        private Ordinazioni pr { get; set; }
+		public Ordinazioni pr { get; set; }
 
-        /*public ElementoCarrello(Ordinazioni pr)
+		public ElementoCarrello(Ordinazioni pr)
 		{
 			InitializeComponent();
 			this.pr = pr;
-		} 
+			lblquantitàprodotto.Text = "(" + pr.Quantita.ToString() + ")";
+			pictureBox1.Image = pr.immagine;
+			lblNomeProdotto.Text = pr.Prodotto;
+			lblPrezzoProdotto.Text = pr.prezzo.ToString() + "€";
+
+		}
 		public Image immagine_prodotto
 		{
 			get { return pictureBox1.Image; }
-			set { pictureBox1.Image = pr.immagine ; }
+			set { pictureBox1.Image = pr.immagine; }
 		}
 
 		public string nome_prodotto
@@ -41,7 +46,7 @@ namespace progetto_ristorante
 				string quantità = lblquantitàprodotto.Text.Replace("(", "").Replace(")", "");
 				return int.Parse(quantità);
 			}
-			set 
+			set
 			{
 				lblquantitàprodotto.Text = "(" + pr.Quantita.ToString() + ")";
 			}
@@ -57,17 +62,15 @@ namespace progetto_ristorante
 			set { lblPrezzoProdotto.Text = pr.prezzo.ToString() + "€"; }
 		}
 
-
-
-		private void btnRimuoviProdotto_Click(object sender, EventArgs e)
+		private void btnRimuoviProdotto_Click_1(object sender, EventArgs e)
 		{
 			this.Parent.Controls.Remove(this);
 		}
 
-		private void pictureBox2_Click(object sender, EventArgs e)
+		private void pictureBox2_Click_1(object sender, EventArgs e)
 		{
+			pr.Quantita+=1;
+			lblquantitàprodotto.Text = "(" + pr.Quantita.ToString() + ")";
 		}
-
-		*/
-    }
+	}
 }

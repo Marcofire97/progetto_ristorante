@@ -8,7 +8,7 @@ using System.Security.Cryptography;
 
 namespace progetto_ristorante
 {
-    internal class Ordinazioni
+    public class Ordinazioni
     {
 
         public int UtenteID { get; set; }
@@ -16,7 +16,7 @@ namespace progetto_ristorante
         public string DataOrdine { get; set; }
         public string Prodotto { get; set; }
         public int Quantita { get; set; }
-        public Image immagine { get; set; }
+        public Image? immagine { get; set; }
         public double prezzo { get; set; }
 
         public Ordinazioni(int utenteID, string Email, string dataOrdine, string prodotto, int quantita)
@@ -28,12 +28,14 @@ namespace progetto_ristorante
             this.Quantita = quantita;
         }
 
-		public Ordinazioni(int utenteID, string dataOrdine, string prodotto, int quantita)
+		public Ordinazioni(int utenteID, string dataOrdine, string prodotto, int quantita, Image? img, double prezzo)
 		{
 			this.UtenteID = utenteID;
 			this.DataOrdine = dataOrdine;
 			this.Prodotto = prodotto;
 			this.Quantita = quantita;
+            this.immagine = img;
+            this.prezzo = prezzo;
 		}
 	}
 }

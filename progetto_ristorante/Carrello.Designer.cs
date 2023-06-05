@@ -28,13 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carrello));
 			lblCarrello = new Label();
 			pcbTornaHomeCarrello = new PictureBox();
 			groupBox1 = new GroupBox();
-			elementoCarrello1 = new ElementoCarrello();
+			bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(components);
+			button1 = new Button();
 			((System.ComponentModel.ISupportInitialize)pcbTornaHomeCarrello).BeginInit();
-			groupBox1.SuspendLayout();
 			SuspendLayout();
 			// 
 			// lblCarrello
@@ -64,27 +65,34 @@
 			// 
 			// groupBox1
 			// 
-			groupBox1.Controls.Add(elementoCarrello1);
 			groupBox1.Location = new Point(60, 96);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Size = new Size(932, 457);
 			groupBox1.TabIndex = 14;
 			groupBox1.TabStop = false;
 			// 
-			// elementoCarrello1
+			// bunifuDragControl1
 			// 
-			//elementoCarrello1.immagine_prodotto = (Image)resources.GetObject("elementoCarrello1.immagine_prodotto");
-			elementoCarrello1.Location = new Point(56, 37);
-			elementoCarrello1.Name = "elementoCarrello1";
-			// elementoCarrello1.nome_prodotto = "Hamburger di pollo";
-			elementoCarrello1.Size = new Size(804, 86);
-			elementoCarrello1.TabIndex = 0;
+			bunifuDragControl1.Fixed = true;
+			bunifuDragControl1.Horizontal = true;
+			bunifuDragControl1.TargetControl = null;
+			bunifuDragControl1.Vertical = true;
+			// 
+			// button1
+			// 
+			button1.Location = new Point(465, 575);
+			button1.Name = "button1";
+			button1.Size = new Size(120, 29);
+			button1.TabIndex = 15;
+			button1.Text = "ORDINA";
+			button1.UseVisualStyleBackColor = true;
 			// 
 			// Carrello
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1039, 616);
+			Controls.Add(button1);
 			Controls.Add(groupBox1);
 			Controls.Add(pcbTornaHomeCarrello);
 			Controls.Add(lblCarrello);
@@ -93,7 +101,6 @@
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Carrello";
 			((System.ComponentModel.ISupportInitialize)pcbTornaHomeCarrello).EndInit();
-			groupBox1.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -103,5 +110,7 @@
 		private PictureBox pcbTornaHomeCarrello;
 		private GroupBox groupBox1;
 		private ElementoCarrello elementoCarrello1;
+		private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+		private Button button1;
 	}
 }
