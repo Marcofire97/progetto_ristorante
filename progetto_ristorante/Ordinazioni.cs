@@ -16,6 +16,8 @@ namespace progetto_ristorante
         public string DataOrdine { get; set; }
         public string Prodotto { get; set; }
         public int Quantita { get; set; }
+        public Image immagine { get; set; }
+        public double prezzo { get; set; }
 
         public Ordinazioni(int utenteID, string Email, string dataOrdine, string prodotto, int quantita)
         {

@@ -1,64 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!--
-    Microsoft ResX Schema 
-
-    Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
-    associated with the data types.
-
-    Example:
-
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-
-    There are any number of "resheader" rows that contain simple
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
+﻿<root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -120,20 +60,20 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAALjSURBVFhH7dRfSFNRHAfwuc2pzTAIQSIyk8gnK8w7N9NimouJpuVC6FXRXsLSNN2SRJ+KSDGh
-        sqxMjfaU1YMrR+n0allmLTN0pG5D2ZyRGJgz/XXO9Vij7c78M3poX/iwe+/O/X0H5zCON96sNFa1PGRC
-        nRxlVafstz1ITsTw9eIzeQhZtn4x303YbLmXdNJSL2ux1CdZEFgGWoPXynLxu2TMyjNeFxc8VhtfNV4b
-        P4vAKs0yM9AsMvbvYqoRHzZXU1ZztQiWfLmfDmPX4n7dr5DFWE3JyHj3MV7emzp6ac8cAuYqCkyVIsDX
-        toZUdL94vUpoZmQKqWHPSHmEabg8ArCJO3LG0v3a7TKSGvYYlGHgSaSGPYMFW4wIeMgoqWFPlK5MEdVR
-        Bqx0Lp4tcfcdhmaTGtfRSzjhzZlbHyuasidjtSVz+KVYrdKe0ZhjK6yQG2TNedNUe+n8Pt2FhYMtRTPZ
-        VzNNWTWZ5gOaohn8jGornU96mDedX5FiSG/KmZRolcwM9GlPa8y11Sl2PmqNDtpB6pzTL+He0ku48F7C
-        g3dIn5gPvcgb5LXYF3qQV2IBvIwRQDfSFeMHNNIZ4w8diE7kD+2iAGhDXog2wHNEi7SKhPCMEsJTKhA0
-        lPAmqXPOP/8BeAsGj3HVpvM+NEPFo0ccDDP49GcHBmTIwaDKl/FJJWAMIB+xEgHdmSZUu90CnNl+jsLe
-        zwFPwLNJjevoY3lH0RZMuduCnjgB9B3xhYEsPhiK+WC6wgNrAxemND7w/e3vsm9dPqA/5ffnFnzVUBvT
-        SJ1zPki4tWs9A90yf+g94Qcd0gDXZyA68Dqpcw4+A08OBapLj2+jGYpQWuWghLGdLnZwDil0cFYRxihQ
-        hDPykdNYRjh9Wxq8/BkIUkoVm1RS8AQ8m9Sw50xlYvbusoQuT8CzSQ17xm7E2xHwEDupYc/oxch5BDzk
-        B6lhz1BxaB2ygMA6wzPZ/wW98eY/DYfzE53CjamNvuyTAAAAAElFTkSuQmCC
+        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
 </value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
