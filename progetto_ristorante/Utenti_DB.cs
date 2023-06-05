@@ -54,6 +54,19 @@ namespace progetto_ristorante
 			}
 		}
 
+		public Utenti GetUtenti(int id)
+		{
+			try
+			{
+				return db.Query<Utenti>($"SELECT * FROM Utenti WHERE ID = '{id.ToString()}'").FirstOrDefault();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Si è verificato un errore nel database", "Errore database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return null;
+			}
+		}
+
 
 		public void AddUtente(Utenti u)
 		{
@@ -67,11 +80,11 @@ namespace progetto_ristorante
 			}
 		}
 
-		public void DeleteUtente(Utenti u)
+		public void DeleteUtente(int id)
 		{
 			try
 			{
-				db.Execute("DELETE FROM Utenti WHERE EMAIL = @Email", u);
+				db.Execute($"DELETE FROM Utenti WHERE ID = '{id.ToString()}'");
 			}
 			catch(Exception ex)
 			{

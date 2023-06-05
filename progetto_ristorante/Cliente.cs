@@ -2,10 +2,15 @@
 {
     public partial class Cliente : Form
     {
+        Utenti_DB db = new Utenti_DB();
+
         public Cliente()
         {
             InitializeComponent();
-        }
+			Utenti u = db.GetUtenti(Utilita.id_utente);
+			lblEmail.Text = u.Email;
+            lblUsername.Text = u.Username;
+		} 
 
         private void btnInserisciFotoProfilo_Click(object sender, EventArgs e)
         {
@@ -18,6 +23,7 @@
                 string imagePath = openFileDialog.FileName;
                 pcbFotoProfilo.Image = Image.FromFile(imagePath);
             }
+
         }
 
         private void btnRimuovi_Click(object sender, EventArgs e)
@@ -28,9 +34,10 @@
 
         private void btnEliminaAccount_Click(object sender, EventArgs e)
         {
+            db.DeleteUtente(Utilita.id_utente);
             MessageBox.Show("Account eliminato correttamente");
-
-            // Torna al login e cancella l'account dal db.
+            new Form1().Show();
+            this.Close();
         }
 
         private void pcbTornaHomeProfilo_Click(object sender, EventArgs e)

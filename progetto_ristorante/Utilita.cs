@@ -12,7 +12,7 @@ namespace progetto_ristorante
     {
 		public static int id_utente;
 		public static int N_acquisti = 0;
-		public static string bonus_5, bonus_10, bonus_20, tempo_rimasto_giornaliero;
+		public static string bonus_5, bonus_10, bonus_20;
 		public static List<Ordinazioni> ordinazioni = new List<Ordinazioni>();
 		public static List<ElementoCarrello> elementi_carrello = new List<ElementoCarrello>();
 		[DllImport("wininet.dll")]

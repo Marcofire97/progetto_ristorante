@@ -36,7 +36,8 @@
             label1 = new Label();
             btnRimuovi = new Button();
             grbDatiSensibili = new GroupBox();
-            lblPasswordd = new Label();
+            btnLogOut = new Button();
+            lblUsername = new Label();
             label3 = new Label();
             lblEmaill = new Label();
             lblEmail = new Label();
@@ -45,7 +46,6 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             btnEliminaAccount = new Button();
-            btnLogOut = new Button();
             ((System.ComponentModel.ISupportInitialize)pcbFotoProfilo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbTornaHomeProfilo).BeginInit();
             grbDatiSensibili.SuspendLayout();
@@ -121,7 +121,7 @@
             // grbDatiSensibili
             // 
             grbDatiSensibili.Controls.Add(btnLogOut);
-            grbDatiSensibili.Controls.Add(lblPasswordd);
+            grbDatiSensibili.Controls.Add(lblUsername);
             grbDatiSensibili.Controls.Add(label3);
             grbDatiSensibili.Controls.Add(lblEmaill);
             grbDatiSensibili.Controls.Add(lblEmail);
@@ -132,14 +132,24 @@
             grbDatiSensibili.TabStop = false;
             grbDatiSensibili.Text = "Dati privati";
             // 
-            // lblPasswordd
+            // btnLogOut
             // 
-            lblPasswordd.AutoSize = true;
-            lblPasswordd.Location = new Point(103, 79);
-            lblPasswordd.Name = "lblPasswordd";
-            lblPasswordd.Size = new Size(87, 20);
-            lblPasswordd.TabIndex = 4;
-            lblPasswordd.Text = "PASSWORD";
+            btnLogOut.Location = new Point(12, 116);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(94, 29);
+            btnLogOut.TabIndex = 5;
+            btnLogOut.Text = "Logout";
+            btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Click += btnLogOut_Click;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(103, 79);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(86, 20);
+            lblUsername.TabIndex = 4;
+            lblUsername.Text = "USERNAME";
             // 
             // label3
             // 
@@ -147,14 +157,14 @@
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(12, 76);
             label3.Name = "label3";
-            label3.Size = new Size(85, 23);
+            label3.Size = new Size(89, 23);
             label3.TabIndex = 2;
-            label3.Text = "Password";
+            label3.Text = "Username";
             // 
             // lblEmaill
             // 
             lblEmaill.AutoSize = true;
-            lblEmaill.Location = new Point(72, 39);
+            lblEmaill.Location = new Point(72, 38);
             lblEmaill.Name = "lblEmaill";
             lblEmaill.Size = new Size(51, 20);
             lblEmaill.TabIndex = 1;
@@ -224,16 +234,6 @@
             btnEliminaAccount.UseVisualStyleBackColor = true;
             btnEliminaAccount.Click += btnEliminaAccount_Click;
             // 
-            // btnLogOut
-            // 
-            btnLogOut.Location = new Point(12, 116);
-            btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(94, 29);
-            btnLogOut.TabIndex = 5;
-            btnLogOut.Text = "Logout";
-            btnLogOut.UseVisualStyleBackColor = true;
-            btnLogOut.Click += btnLogOut_Click;
-            // 
             // Cliente
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -272,7 +272,7 @@
         private GroupBox grbDatiSensibili;
         private Label lblEmaill;
         private Label lblEmail;
-        private Label lblPasswordd;
+        private Label lblUsername;
         private Label label3;
         private GroupBox grbFotoProfilo;
         private GroupBox groupBox1;
