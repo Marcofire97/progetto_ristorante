@@ -45,14 +45,14 @@
             MinimizeButton = new Button();
             CloseButton = new Button();
             ShoppingCart = new Button();
-            HamburguerCollectionButton = new Button();
-            CakeCollectionButton = new Button();
-            CakeCollectionLabel = new Label();
-            PizzaCollectionLabel = new Label();
-            BurgerLabel = new Label();
-            PizzaCollectionButton = new Button();
-            PastaCollectionButton = new Button();
-            PastaCollectionLabel = new Label();
+            btnHamburger = new Button();
+            btnTorta = new Button();
+            lblTorta = new Label();
+            lblPizza = new Label();
+            lblBurger = new Label();
+            btnPizza = new Button();
+            btnPasta = new Button();
+            lblPasta = new Label();
             MainLogoPainel = new Panel();
             MainLogo = new PictureBox();
             SubtitleMainView = new Label();
@@ -151,6 +151,7 @@
             btnVaiAlleImpostazioni.Text = "      Cliente";
             btnVaiAlleImpostazioni.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVaiAlleImpostazioni.UseVisualStyleBackColor = true;
+            btnVaiAlleImpostazioni.Click += btnVaiAlleImpostazioni_Click;
             // 
             // btnVaiOfferte
             // 
@@ -171,6 +172,7 @@
             btnVaiOfferte.Text = "      Offerte";
             btnVaiOfferte.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVaiOfferte.UseVisualStyleBackColor = true;
+            btnVaiOfferte.Click += btnVaiOfferte_Click;
             // 
             // btnFacebookCollezione
             // 
@@ -339,89 +341,93 @@
             ShoppingCart.UseVisualStyleBackColor = true;
             ShoppingCart.Click += ShoppingCart_Click;
             // 
-            // HamburguerCollectionButton
+            // btnHamburger
             // 
-            HamburguerCollectionButton.FlatAppearance.BorderSize = 0;
-            HamburguerCollectionButton.FlatStyle = FlatStyle.Flat;
-            HamburguerCollectionButton.Image = (Image)resources.GetObject("HamburguerCollectionButton.Image");
-            HamburguerCollectionButton.Location = new Point(517, 291);
-            HamburguerCollectionButton.Margin = new Padding(3, 4, 3, 4);
-            HamburguerCollectionButton.Name = "HamburguerCollectionButton";
-            HamburguerCollectionButton.Size = new Size(86, 96);
-            HamburguerCollectionButton.TabIndex = 30;
-            HamburguerCollectionButton.UseVisualStyleBackColor = true;
+            btnHamburger.FlatAppearance.BorderSize = 0;
+            btnHamburger.FlatStyle = FlatStyle.Flat;
+            btnHamburger.Image = (Image)resources.GetObject("btnHamburger.Image");
+            btnHamburger.Location = new Point(517, 291);
+            btnHamburger.Margin = new Padding(3, 4, 3, 4);
+            btnHamburger.Name = "btnHamburger";
+            btnHamburger.Size = new Size(86, 96);
+            btnHamburger.TabIndex = 30;
+            btnHamburger.UseVisualStyleBackColor = true;
+            btnHamburger.Click += btnHamburger_Click;
             // 
-            // CakeCollectionButton
+            // btnTorta
             // 
-            CakeCollectionButton.FlatAppearance.BorderSize = 0;
-            CakeCollectionButton.FlatStyle = FlatStyle.Flat;
-            CakeCollectionButton.Image = (Image)resources.GetObject("CakeCollectionButton.Image");
-            CakeCollectionButton.Location = new Point(743, 291);
-            CakeCollectionButton.Margin = new Padding(3, 4, 3, 4);
-            CakeCollectionButton.Name = "CakeCollectionButton";
-            CakeCollectionButton.Size = new Size(86, 96);
-            CakeCollectionButton.TabIndex = 32;
-            CakeCollectionButton.UseVisualStyleBackColor = true;
+            btnTorta.FlatAppearance.BorderSize = 0;
+            btnTorta.FlatStyle = FlatStyle.Flat;
+            btnTorta.Image = (Image)resources.GetObject("btnTorta.Image");
+            btnTorta.Location = new Point(743, 291);
+            btnTorta.Margin = new Padding(3, 4, 3, 4);
+            btnTorta.Name = "btnTorta";
+            btnTorta.Size = new Size(86, 96);
+            btnTorta.TabIndex = 32;
+            btnTorta.UseVisualStyleBackColor = true;
+            btnTorta.Click += btnTorta_Click;
             // 
-            // CakeCollectionLabel
+            // lblTorta
             // 
-            CakeCollectionLabel.AutoSize = true;
-            CakeCollectionLabel.Location = new Point(766, 391);
-            CakeCollectionLabel.Name = "CakeCollectionLabel";
-            CakeCollectionLabel.Size = new Size(43, 20);
-            CakeCollectionLabel.TabIndex = 35;
-            CakeCollectionLabel.Text = "Torta";
+            lblTorta.AutoSize = true;
+            lblTorta.Location = new Point(766, 391);
+            lblTorta.Name = "lblTorta";
+            lblTorta.Size = new Size(43, 20);
+            lblTorta.TabIndex = 35;
+            lblTorta.Text = "Torta";
             // 
-            // PizzaCollectionLabel
+            // lblPizza
             // 
-            PizzaCollectionLabel.AutoSize = true;
-            PizzaCollectionLabel.Location = new Point(870, 391);
-            PizzaCollectionLabel.Name = "PizzaCollectionLabel";
-            PizzaCollectionLabel.Size = new Size(43, 20);
-            PizzaCollectionLabel.TabIndex = 34;
-            PizzaCollectionLabel.Text = "Pizza";
+            lblPizza.AutoSize = true;
+            lblPizza.Location = new Point(870, 391);
+            lblPizza.Name = "lblPizza";
+            lblPizza.Size = new Size(43, 20);
+            lblPizza.TabIndex = 34;
+            lblPizza.Text = "Pizza";
             // 
-            // BurgerLabel
+            // lblBurger
             // 
-            BurgerLabel.AutoSize = true;
-            BurgerLabel.Location = new Point(520, 391);
-            BurgerLabel.Name = "BurgerLabel";
-            BurgerLabel.Size = new Size(85, 20);
-            BurgerLabel.TabIndex = 37;
-            BurgerLabel.Text = "Hamburger";
+            lblBurger.AutoSize = true;
+            lblBurger.Location = new Point(520, 391);
+            lblBurger.Name = "lblBurger";
+            lblBurger.Size = new Size(85, 20);
+            lblBurger.TabIndex = 37;
+            lblBurger.Text = "Hamburger";
             // 
-            // PizzaCollectionButton
+            // btnPizza
             // 
-            PizzaCollectionButton.FlatAppearance.BorderSize = 0;
-            PizzaCollectionButton.FlatStyle = FlatStyle.Flat;
-            PizzaCollectionButton.Image = (Image)resources.GetObject("PizzaCollectionButton.Image");
-            PizzaCollectionButton.Location = new Point(848, 291);
-            PizzaCollectionButton.Margin = new Padding(3, 4, 3, 4);
-            PizzaCollectionButton.Name = "PizzaCollectionButton";
-            PizzaCollectionButton.Size = new Size(86, 96);
-            PizzaCollectionButton.TabIndex = 33;
-            PizzaCollectionButton.UseVisualStyleBackColor = true;
+            btnPizza.FlatAppearance.BorderSize = 0;
+            btnPizza.FlatStyle = FlatStyle.Flat;
+            btnPizza.Image = (Image)resources.GetObject("btnPizza.Image");
+            btnPizza.Location = new Point(848, 291);
+            btnPizza.Margin = new Padding(3, 4, 3, 4);
+            btnPizza.Name = "btnPizza";
+            btnPizza.Size = new Size(86, 96);
+            btnPizza.TabIndex = 33;
+            btnPizza.UseVisualStyleBackColor = true;
+            btnPizza.Click += btnPizza_Click;
             // 
-            // PastaCollectionButton
+            // btnPasta
             // 
-            PastaCollectionButton.FlatAppearance.BorderSize = 0;
-            PastaCollectionButton.FlatStyle = FlatStyle.Flat;
-            PastaCollectionButton.Image = (Image)resources.GetObject("PastaCollectionButton.Image");
-            PastaCollectionButton.Location = new Point(630, 291);
-            PastaCollectionButton.Margin = new Padding(3, 4, 3, 4);
-            PastaCollectionButton.Name = "PastaCollectionButton";
-            PastaCollectionButton.Size = new Size(86, 96);
-            PastaCollectionButton.TabIndex = 31;
-            PastaCollectionButton.UseVisualStyleBackColor = true;
+            btnPasta.FlatAppearance.BorderSize = 0;
+            btnPasta.FlatStyle = FlatStyle.Flat;
+            btnPasta.Image = (Image)resources.GetObject("btnPasta.Image");
+            btnPasta.Location = new Point(630, 291);
+            btnPasta.Margin = new Padding(3, 4, 3, 4);
+            btnPasta.Name = "btnPasta";
+            btnPasta.Size = new Size(86, 96);
+            btnPasta.TabIndex = 31;
+            btnPasta.UseVisualStyleBackColor = true;
+            btnPasta.Click += btnPasta_Click;
             // 
-            // PastaCollectionLabel
+            // lblPasta
             // 
-            PastaCollectionLabel.AutoSize = true;
-            PastaCollectionLabel.Location = new Point(654, 391);
-            PastaCollectionLabel.Name = "PastaCollectionLabel";
-            PastaCollectionLabel.Size = new Size(43, 20);
-            PastaCollectionLabel.TabIndex = 36;
-            PastaCollectionLabel.Text = "Pasta";
+            lblPasta.AutoSize = true;
+            lblPasta.Location = new Point(654, 391);
+            lblPasta.Name = "lblPasta";
+            lblPasta.Size = new Size(43, 20);
+            lblPasta.TabIndex = 36;
+            lblPasta.Text = "Pasta";
             // 
             // MainLogoPainel
             // 
@@ -474,14 +480,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1219, 788);
             Controls.Add(MainLogoPainel);
-            Controls.Add(HamburguerCollectionButton);
-            Controls.Add(CakeCollectionButton);
-            Controls.Add(CakeCollectionLabel);
-            Controls.Add(PizzaCollectionLabel);
-            Controls.Add(BurgerLabel);
-            Controls.Add(PizzaCollectionButton);
-            Controls.Add(PastaCollectionButton);
-            Controls.Add(PastaCollectionLabel);
+            Controls.Add(btnHamburger);
+            Controls.Add(btnTorta);
+            Controls.Add(lblTorta);
+            Controls.Add(lblPizza);
+            Controls.Add(lblBurger);
+            Controls.Add(btnPizza);
+            Controls.Add(btnPasta);
+            Controls.Add(lblPasta);
             Controls.Add(TopPanel);
             Controls.Add(ConfigGroupBox);
             Controls.Add(ShoppingCart);
@@ -517,14 +523,14 @@
         private Button MinimizeButton;
         private Button CloseButton;
         private Button ShoppingCart;
-        private Button HamburguerCollectionButton;
-        private Button CakeCollectionButton;
-        private Label CakeCollectionLabel;
-        private Label PizzaCollectionLabel;
-        private Label BurgerLabel;
-        private Button PizzaCollectionButton;
-        private Button PastaCollectionButton;
-        private Label PastaCollectionLabel;
+        private Button btnHamburger;
+        private Button btnTorta;
+        private Label lblTorta;
+        private Label lblPizza;
+        private Label lblBurger;
+        private Button btnPizza;
+        private Button btnPasta;
+        private Label lblPasta;
         private Panel MainLogoPainel;
         private PictureBox MainLogo;
         private Label SubtitleMainView;

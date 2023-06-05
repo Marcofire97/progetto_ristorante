@@ -16,5 +16,11 @@ namespace progetto_ristorante
         {
             InitializeComponent();
         }
+
+        private void pcbTornaHomePasta_Click(object sender, EventArgs e)
+        {
+            new Ristorante().Show();
+            this.Hide();
+        }
     }
 }

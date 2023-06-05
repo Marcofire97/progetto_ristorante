@@ -86,7 +86,44 @@ namespace progetto_ristorante
 
         private void TakeButton_Click(object sender, EventArgs e)
         {
-            new tak
+            new TakeAway().Show();
+            this.Hide();
+        }
+
+        private void btnVaiOfferte_Click(object sender, EventArgs e)
+        {
+            new Offerte().Show();
+            this.Hide();
+        }
+
+        private void btnVaiAlleImpostazioni_Click(object sender, EventArgs e)
+        {
+            new Cliente().Show();
+            this.Hide();
+        }
+
+        private void btnHamburger_Click(object sender, EventArgs e)
+        {
+            new Hamburger().Show();
+            this.Hide();
+        }
+
+        private void btnPasta_Click(object sender, EventArgs e)
+        {
+            new Pasta().Show();
+            this.Hide();
+        }
+
+        private void btnTorta_Click(object sender, EventArgs e)
+        {
+            new Torta().Show();
+            this.Hide();
+        }
+
+        private void btnPizza_Click(object sender, EventArgs e)
+        {
+            new Pizza().Show();
+            this.Hide();
         }
     }
 }

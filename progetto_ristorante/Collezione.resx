@@ -754,7 +754,7 @@
         gg==
 </value>
   </data>
-  <data name="HamburguerCollectionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHamburger.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA9tJREFUeF7t
         mturVUUcgI8m5FOkZkZlpUWUhl20V/MhScwKjXpIEMFbIN0eAo3QokDQJ0nCXrR60MJMgwRfIsr8Ayy1
@@ -776,7 +776,7 @@
         i1pXnwULMZFIJBKJRCKRGMTAwDUONkezpTtg0wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CakeCollectionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTorta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAy5JREFUeF7t
         2kuoTVEcx/HrTQh55DEQAwmFDJQkKZGS10AGRoQkSqSkjEgZyMCEMjASZeJRJuSRvJ9FXiXl/chr4M33
@@ -795,7 +795,7 @@
         eb9kgb4noK/e5H0TJSUlJSUlJSUlpYHS1PQXePizXmksT/EAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="PizzaCollectionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPizza.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAACGJJREFUeF7t
         mwWMJEUUhnsadztcDg9wh7u7BSdAcAmB4BAIGlyCBSe4huAaJPgRgt/hGtzd3eX736tqenqnR5bZ2dll
@@ -836,7 +836,7 @@
         gkZh8zSGui2gPk08dANk9vbiRxEcbzu9lvIKVjOEIQxhCIMKSfIPsAlGM64csXIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="PastaCollectionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPasta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABOlJREFUeF7t
         m0moHUUUhqvbOG0UTTCiRgQHRN0ZEYmKMy5VUCLqSs3CRUQluHGhOCTEKXEhDqiIA6IgRl2IQYzDJg4o
