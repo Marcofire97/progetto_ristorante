@@ -113,8 +113,8 @@ namespace progetto_ristorante
 			{
 				if (ordine.Prodotto == prodotto)
 				{
-					MessageBox.Show("Il prodotto è già nel carrello");
-					return true;
+                    MessageBox.Show("Il prodotto è già nel carrello!", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return true;
 				}
 			}
 			return false;

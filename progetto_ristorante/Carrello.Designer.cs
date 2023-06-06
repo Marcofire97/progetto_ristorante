@@ -83,7 +83,7 @@
             // button1
             // 
             button1.Enabled = false;
-            button1.Location = new Point(447, 579);
+            button1.Location = new Point(469, 579);
             button1.Name = "button1";
             button1.Size = new Size(199, 49);
             button1.TabIndex = 15;
@@ -95,7 +95,7 @@
             // 
             lblCodiceSconto.AutoSize = true;
             lblCodiceSconto.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCodiceSconto.Location = new Point(720, 38);
+            lblCodiceSconto.Location = new Point(720, 36);
             lblCodiceSconto.Name = "lblCodiceSconto";
             lblCodiceSconto.Size = new Size(120, 23);
             lblCodiceSconto.TabIndex = 16;
@@ -103,7 +103,7 @@
             // 
             // txbCodsconto
             // 
-            txbCodsconto.Location = new Point(858, 37);
+            txbCodsconto.Location = new Point(858, 35);
             txbCodsconto.Name = "txbCodsconto";
             txbCodsconto.Size = new Size(131, 27);
             txbCodsconto.TabIndex = 17;

@@ -48,7 +48,7 @@
             btnOrdinaOraPromo = new Button();
             lblPromo = new Label();
             pcbPaninoPromo = new PictureBox();
-            label4 = new Label();
+            lblProdottiPromo = new Label();
             lblTitoloPromo = new Label();
             lblSolo = new Label();
             lblPrezzoPromo = new Label();
@@ -135,6 +135,7 @@
             // 
             // btnVaiAlleImpostazioni
             // 
+            btnVaiAlleImpostazioni.Cursor = Cursors.Hand;
             btnVaiAlleImpostazioni.FlatAppearance.BorderColor = Color.FromArgb(41, 39, 40);
             btnVaiAlleImpostazioni.FlatAppearance.BorderSize = 0;
             btnVaiAlleImpostazioni.FlatAppearance.MouseDownBackColor = Color.FromArgb(41, 39, 40);
@@ -278,6 +279,7 @@
             btnVaiAlTakeAway.Text = "      Take Away";
             btnVaiAlTakeAway.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVaiAlTakeAway.UseVisualStyleBackColor = true;
+            btnVaiAlTakeAway.Click += btnVaiAlTakeAway_Click;
             // 
             // MainLogoPainel
             // 
@@ -307,7 +309,7 @@
             lblSottotitolo.AutoSize = true;
             lblSottotitolo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblSottotitolo.ForeColor = Color.White;
-            lblSottotitolo.Location = new Point(23, 159);
+            lblSottotitolo.Location = new Point(24, 159);
             lblSottotitolo.Name = "lblSottotitolo";
             lblSottotitolo.Size = new Size(86, 20);
             lblSottotitolo.TabIndex = 3;
@@ -338,6 +340,8 @@
             // 
             btnOrdinaOraPromo.BackColor = Color.FromArgb(255, 199, 44);
             btnOrdinaOraPromo.FlatAppearance.BorderSize = 0;
+            btnOrdinaOraPromo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 199, 44);
+            btnOrdinaOraPromo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 199, 44);
             btnOrdinaOraPromo.FlatStyle = FlatStyle.Flat;
             btnOrdinaOraPromo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnOrdinaOraPromo.ForeColor = Color.White;
@@ -371,15 +375,15 @@
             pcbPaninoPromo.TabIndex = 23;
             pcbPaninoPromo.TabStop = false;
             // 
-            // label4
+            // lblProdottiPromo
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(266, 503);
-            label4.Name = "label4";
-            label4.Size = new Size(356, 25);
-            label4.TabIndex = 22;
-            label4.Text = "Con cipolle, insalata, cetriolini e ketchup";
+            lblProdottiPromo.AutoSize = true;
+            lblProdottiPromo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProdottiPromo.Location = new Point(266, 503);
+            lblProdottiPromo.Name = "lblProdottiPromo";
+            lblProdottiPromo.Size = new Size(356, 25);
+            lblProdottiPromo.TabIndex = 22;
+            lblProdottiPromo.Text = "Con cipolle, insalata, cetriolini e ketchup";
             // 
             // lblTitoloPromo
             // 
@@ -417,7 +421,10 @@
             ShoppingCart.BackgroundImage = (Image)resources.GetObject("ShoppingCart.BackgroundImage");
             ShoppingCart.BackgroundImageLayout = ImageLayout.Stretch;
             ShoppingCart.Cursor = Cursors.Hand;
+            ShoppingCart.FlatAppearance.BorderColor = SystemColors.Control;
             ShoppingCart.FlatAppearance.BorderSize = 0;
+            ShoppingCart.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            ShoppingCart.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             ShoppingCart.FlatStyle = FlatStyle.Flat;
             ShoppingCart.Location = new Point(1036, 29);
             ShoppingCart.Margin = new Padding(3, 4, 3, 4);
@@ -444,6 +451,7 @@
             btnMinimizza.BackgroundImage = (Image)resources.GetObject("btnMinimizza.BackgroundImage");
             btnMinimizza.BackgroundImageLayout = ImageLayout.Stretch;
             btnMinimizza.FlatAppearance.BorderSize = 0;
+            btnMinimizza.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             btnMinimizza.FlatStyle = FlatStyle.Flat;
             btnMinimizza.Location = new Point(16, 20);
             btnMinimizza.Margin = new Padding(3, 4, 3, 4);
@@ -458,6 +466,7 @@
             btnChiudi.BackgroundImage = (Image)resources.GetObject("btnChiudi.BackgroundImage");
             btnChiudi.BackgroundImageLayout = ImageLayout.Stretch;
             btnChiudi.FlatAppearance.BorderSize = 0;
+            btnChiudi.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             btnChiudi.FlatStyle = FlatStyle.Flat;
             btnChiudi.Location = new Point(68, 20);
             btnChiudi.Margin = new Padding(3, 4, 3, 4);
@@ -478,7 +487,7 @@
             Controls.Add(btnOrdinaOraPromo);
             Controls.Add(lblPromo);
             Controls.Add(pcbPaninoPromo);
-            Controls.Add(label4);
+            Controls.Add(lblProdottiPromo);
             Controls.Add(lblTitoloPromo);
             Controls.Add(lblSolo);
             Controls.Add(lblPrezzoPromo);
@@ -520,7 +529,7 @@
         private Button btnOrdinaOraPromo;
         private Label lblPromo;
         private PictureBox pcbPaninoPromo;
-        private Label label4;
+        private Label lblProdottiPromo;
         private Label lblTitoloPromo;
         private Label lblSolo;
         private Label lblPrezzoPromo;

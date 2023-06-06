@@ -49,6 +49,8 @@
             // btnAccedi
             // 
             btnAccedi.BackColor = Color.FromArgb(78, 184, 206);
+            btnAccedi.FlatAppearance.MouseDownBackColor = Color.FromArgb(78, 184, 206);
+            btnAccedi.FlatAppearance.MouseOverBackColor = Color.FromArgb(78, 184, 206);
             btnAccedi.FlatStyle = FlatStyle.Flat;
             btnAccedi.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             btnAccedi.ForeColor = Color.FromArgb(34, 36, 49);
@@ -62,8 +64,9 @@
             // 
             // pcbNuovoUtente
             // 
+            pcbNuovoUtente.Cursor = Cursors.Hand;
             pcbNuovoUtente.Image = (Image)resources.GetObject("pcbNuovoUtente.Image");
-            pcbNuovoUtente.Location = new Point(138, 406);
+            pcbNuovoUtente.Location = new Point(139, 406);
             pcbNuovoUtente.Margin = new Padding(3, 4, 3, 4);
             pcbNuovoUtente.Name = "pcbNuovoUtente";
             pcbNuovoUtente.Size = new Size(56, 53);

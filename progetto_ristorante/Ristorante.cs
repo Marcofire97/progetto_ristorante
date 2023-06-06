@@ -127,5 +127,11 @@ namespace progetto_ristorante
             new Collezione().Show();
             this.Hide();
         }
+
+        private void btnVaiAlTakeAway_Click(object sender, EventArgs e)
+        {
+            new TakeAway().Show();
+            this.Hide();
+        }
     }
 }

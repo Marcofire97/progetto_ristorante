@@ -155,6 +155,7 @@
             // 
             // pcbVaialLogin
             // 
+            pcbVaialLogin.Cursor = Cursors.Hand;
             pcbVaialLogin.Image = (Image)resources.GetObject("pcbVaialLogin.Image");
             pcbVaialLogin.Location = new Point(154, 498);
             pcbVaialLogin.Margin = new Padding(3, 4, 3, 4);
@@ -168,6 +169,8 @@
             // btnRegistrati
             // 
             btnRegistrati.BackColor = Color.FromArgb(78, 184, 206);
+            btnRegistrati.FlatAppearance.MouseDownBackColor = Color.FromArgb(78, 184, 206);
+            btnRegistrati.FlatAppearance.MouseOverBackColor = Color.FromArgb(78, 184, 206);
             btnRegistrati.FlatStyle = FlatStyle.Flat;
             btnRegistrati.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             btnRegistrati.ForeColor = Color.FromArgb(34, 36, 49);

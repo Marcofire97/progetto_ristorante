@@ -127,7 +127,7 @@
             // SidePanel
             // 
             SidePanel.BackColor = Color.FromArgb(218, 41, 28);
-            SidePanel.Location = new Point(-4, 287);
+            SidePanel.Location = new Point(-4, 288);
             SidePanel.Margin = new Padding(3, 4, 3, 4);
             SidePanel.Name = "SidePanel";
             SidePanel.Size = new Size(11, 76);
@@ -196,7 +196,11 @@
             // 
             // btnVaiallaCollezione
             // 
+            btnVaiallaCollezione.Cursor = Cursors.Hand;
+            btnVaiallaCollezione.FlatAppearance.BorderColor = Color.FromArgb(41, 39, 40);
             btnVaiallaCollezione.FlatAppearance.BorderSize = 0;
+            btnVaiallaCollezione.FlatAppearance.MouseDownBackColor = Color.FromArgb(41, 39, 40);
+            btnVaiallaCollezione.FlatAppearance.MouseOverBackColor = Color.FromArgb(41, 39, 40);
             btnVaiallaCollezione.FlatStyle = FlatStyle.Flat;
             btnVaiallaCollezione.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnVaiallaCollezione.ForeColor = Color.White;
@@ -303,6 +307,7 @@
             MinimizeButton.BackgroundImage = (Image)resources.GetObject("MinimizeButton.BackgroundImage");
             MinimizeButton.BackgroundImageLayout = ImageLayout.Stretch;
             MinimizeButton.FlatAppearance.BorderSize = 0;
+            MinimizeButton.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             MinimizeButton.FlatStyle = FlatStyle.Flat;
             MinimizeButton.Location = new Point(16, 20);
             MinimizeButton.Margin = new Padding(3, 4, 3, 4);
@@ -317,6 +322,7 @@
             CloseButton.BackgroundImage = (Image)resources.GetObject("CloseButton.BackgroundImage");
             CloseButton.BackgroundImageLayout = ImageLayout.Stretch;
             CloseButton.FlatAppearance.BorderSize = 0;
+            CloseButton.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             CloseButton.FlatStyle = FlatStyle.Flat;
             CloseButton.Location = new Point(68, 20);
             CloseButton.Margin = new Padding(3, 4, 3, 4);
@@ -328,25 +334,33 @@
             // 
             // ShoppingCart
             // 
+            ShoppingCart.BackColor = SystemColors.Control;
             ShoppingCart.BackgroundImage = (Image)resources.GetObject("ShoppingCart.BackgroundImage");
             ShoppingCart.BackgroundImageLayout = ImageLayout.Stretch;
             ShoppingCart.Cursor = Cursors.Hand;
+            ShoppingCart.FlatAppearance.BorderColor = SystemColors.Control;
             ShoppingCart.FlatAppearance.BorderSize = 0;
+            ShoppingCart.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            ShoppingCart.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             ShoppingCart.FlatStyle = FlatStyle.Flat;
             ShoppingCart.Location = new Point(1036, 29);
             ShoppingCart.Margin = new Padding(3, 4, 3, 4);
             ShoppingCart.Name = "ShoppingCart";
             ShoppingCart.Size = new Size(29, 39);
             ShoppingCart.TabIndex = 28;
-            ShoppingCart.UseVisualStyleBackColor = true;
+            ShoppingCart.UseVisualStyleBackColor = false;
             ShoppingCart.Click += ShoppingCart_Click;
             // 
             // btnHamburger
             // 
+            btnHamburger.Cursor = Cursors.Hand;
+            btnHamburger.FlatAppearance.BorderColor = SystemColors.Control;
             btnHamburger.FlatAppearance.BorderSize = 0;
+            btnHamburger.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            btnHamburger.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             btnHamburger.FlatStyle = FlatStyle.Flat;
             btnHamburger.Image = (Image)resources.GetObject("btnHamburger.Image");
-            btnHamburger.Location = new Point(517, 291);
+            btnHamburger.Location = new Point(526, 291);
             btnHamburger.Margin = new Padding(3, 4, 3, 4);
             btnHamburger.Name = "btnHamburger";
             btnHamburger.Size = new Size(86, 96);
@@ -356,10 +370,14 @@
             // 
             // btnTorta
             // 
+            btnTorta.Cursor = Cursors.Hand;
+            btnTorta.FlatAppearance.BorderColor = SystemColors.Control;
             btnTorta.FlatAppearance.BorderSize = 0;
+            btnTorta.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            btnTorta.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             btnTorta.FlatStyle = FlatStyle.Flat;
             btnTorta.Image = (Image)resources.GetObject("btnTorta.Image");
-            btnTorta.Location = new Point(743, 291);
+            btnTorta.Location = new Point(752, 291);
             btnTorta.Margin = new Padding(3, 4, 3, 4);
             btnTorta.Name = "btnTorta";
             btnTorta.Size = new Size(86, 96);
@@ -370,7 +388,7 @@
             // lblTorta
             // 
             lblTorta.AutoSize = true;
-            lblTorta.Location = new Point(766, 391);
+            lblTorta.Location = new Point(775, 391);
             lblTorta.Name = "lblTorta";
             lblTorta.Size = new Size(43, 20);
             lblTorta.TabIndex = 35;
@@ -379,7 +397,7 @@
             // lblPizza
             // 
             lblPizza.AutoSize = true;
-            lblPizza.Location = new Point(870, 391);
+            lblPizza.Location = new Point(879, 391);
             lblPizza.Name = "lblPizza";
             lblPizza.Size = new Size(43, 20);
             lblPizza.TabIndex = 34;
@@ -388,7 +406,7 @@
             // lblBurger
             // 
             lblBurger.AutoSize = true;
-            lblBurger.Location = new Point(520, 391);
+            lblBurger.Location = new Point(529, 391);
             lblBurger.Name = "lblBurger";
             lblBurger.Size = new Size(85, 20);
             lblBurger.TabIndex = 37;
@@ -396,10 +414,14 @@
             // 
             // btnPizza
             // 
+            btnPizza.Cursor = Cursors.Hand;
+            btnPizza.FlatAppearance.BorderColor = SystemColors.Control;
             btnPizza.FlatAppearance.BorderSize = 0;
+            btnPizza.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            btnPizza.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             btnPizza.FlatStyle = FlatStyle.Flat;
             btnPizza.Image = (Image)resources.GetObject("btnPizza.Image");
-            btnPizza.Location = new Point(848, 291);
+            btnPizza.Location = new Point(857, 291);
             btnPizza.Margin = new Padding(3, 4, 3, 4);
             btnPizza.Name = "btnPizza";
             btnPizza.Size = new Size(86, 96);
@@ -409,10 +431,14 @@
             // 
             // btnPasta
             // 
+            btnPasta.Cursor = Cursors.Hand;
+            btnPasta.FlatAppearance.BorderColor = SystemColors.Control;
             btnPasta.FlatAppearance.BorderSize = 0;
+            btnPasta.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            btnPasta.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             btnPasta.FlatStyle = FlatStyle.Flat;
             btnPasta.Image = (Image)resources.GetObject("btnPasta.Image");
-            btnPasta.Location = new Point(630, 291);
+            btnPasta.Location = new Point(639, 291);
             btnPasta.Margin = new Padding(3, 4, 3, 4);
             btnPasta.Name = "btnPasta";
             btnPasta.Size = new Size(86, 96);
@@ -423,7 +449,7 @@
             // lblPasta
             // 
             lblPasta.AutoSize = true;
-            lblPasta.Location = new Point(654, 391);
+            lblPasta.Location = new Point(663, 391);
             lblPasta.Name = "lblPasta";
             lblPasta.Size = new Size(43, 20);
             lblPasta.TabIndex = 36;
@@ -496,6 +522,7 @@
             Name = "Collezione";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Collezione";
+            Load += Collezione_Load;
             MainPanel.ResumeLayout(false);
             ConfigGroupBox.ResumeLayout(false);
             MainLogoPainel.ResumeLayout(false);

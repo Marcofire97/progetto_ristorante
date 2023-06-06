@@ -125,5 +125,10 @@ namespace progetto_ristorante
             new Pizza().Show();
             this.Hide();
         }
+
+        private void Collezione_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

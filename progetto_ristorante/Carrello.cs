@@ -35,22 +35,22 @@ namespace progetto_ristorante
 			*/
 
             Utilita.elementi_carrello.Clear();
-            if(!string.IsNullOrEmpty(txbCodsconto.Text))
+            if (!string.IsNullOrEmpty(txbCodsconto.Text))
             {
-                if(txbCodsconto.Text == Utilita.bonus_5)
+                if (txbCodsconto.Text == Utilita.bonus_5)
                 {
-                    int sconto = 1/Utilita.ordinazioni.Count;
-                    foreach(var ordine in Utilita.ordinazioni)
+                    int sconto = 1 / Utilita.ordinazioni.Count;
+                    foreach (var ordine in Utilita.ordinazioni)
                     {
                         ordine.prezzo -= sconto;
                     }
                     Utilita.bonus_5 = null;
                 }
 
-                if(txbCodsconto.Text == Utilita.bonus_10)
+                if (txbCodsconto.Text == Utilita.bonus_10)
                 {
-                    int sconto = 3/Utilita.ordinazioni.Count;
-                    foreach(var ordine in Utilita.ordinazioni)
+                    int sconto = 3 / Utilita.ordinazioni.Count;
+                    foreach (var ordine in Utilita.ordinazioni)
                     {
                         ordine.prezzo -= sconto; //cosa stai facendo?
                         // guarda qquanti errori ci sono    
@@ -58,17 +58,17 @@ namespace progetto_ristorante
                     Utilita.bonus_10 = null;
                 }
 
-                if(txbCodsconto.Text == Utilita.bonus_20)
+                if (txbCodsconto.Text == Utilita.bonus_20)
                 {
-                    int sconto = 8/Utilita.ordinazioni.Count;
-                    foreach(var ordine in Utilita.ordinazioni)
+                    int sconto = 8 / Utilita.ordinazioni.Count;
+                    foreach (var ordine in Utilita.ordinazioni)
                     {
                         ordine.prezzo -= sconto;
                     }
                     Utilita.bonus_20 = null;
                 }
             }
-            
+
             for (int i = 0; i < Utilita.ordinazioni.Count; i++)
             {
                 Utilita.elementi_carrello.Add(new(Utilita.ordinazioni[i]));

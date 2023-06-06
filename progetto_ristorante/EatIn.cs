@@ -11,42 +11,42 @@ using System.Windows.Forms;
 
 namespace progetto_ristorante
 {
-	public partial class EatIn : Form
-	{
-		DateTime data = DateTime.Now;
-		public EatIn()
-		{
-			InitializeComponent();
-		}
+    public partial class EatIn : Form
+    {
+        DateTime data = DateTime.Now;
+        public EatIn()
+        {
+            InitializeComponent();
+        }
 
-		private void pcbTornaHomeEatIn_Click(object sender, EventArgs e)
-		{
-			new Ristorante().Show();
-			this.Hide();
-		}
+        private void pcbTornaHomeEatIn_Click(object sender, EventArgs e)
+        {
+            new Ristorante().Show();
+            this.Hide();
+        }
 
-		private void btnAcquistaBurger_Click(object sender, EventArgs e)
-		{
-			if (!Utilita.controllo_carrello("Burger"))
-			{
-				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Burger", 1, null, 9));
-			}
-		}
+        private void btnAcquistaBurger_Click(object sender, EventArgs e)
+        {
+            if (!Utilita.controllo_carrello("Burger"))
+            {
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Burger", 1, null, 9));
+            }
+        }
 
-		private void btnAcquistaPasta_Click(object sender, EventArgs e)
-		{
-			if (!Utilita.controllo_carrello("Pasta"))
-			{
-				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pasta", 1, null, 8));
-			}
-		}
+        private void btnAcquistaPasta_Click(object sender, EventArgs e)
+        {
+            if (!Utilita.controllo_carrello("Pasta"))
+            {
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pasta", 1, null, 8));
+            }
+        }
 
-		private void btnAcquistaTorta_Click(object sender, EventArgs e)
-		{
-			if (!Utilita.controllo_carrello("Torta"))
-			{
-				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta", 1, null, 11));
-			}
-		}
-	}
+        private void btnAcquistaTorta_Click(object sender, EventArgs e)
+        {
+            if (!Utilita.controllo_carrello("Torta"))
+            {
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta", 1, null, 11));
+            }
+        }
+    }
 }
