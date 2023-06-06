@@ -29,7 +29,7 @@ namespace progetto_ristorante
 		{
 			if (!Utilita.controllo_carrello("Burger"))
 			{
-				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Burger", 1, Image.FromFile("foto/burger.PNG"), 9));
+				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Burger", 1, null, 9));
 			}
 		}
 
