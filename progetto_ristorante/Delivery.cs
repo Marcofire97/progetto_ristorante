@@ -27,21 +27,24 @@ namespace progetto_ristorante
 
 		private void btnTerminaordine_Click(object sender, EventArgs e)
 		{
-			if(string.IsNullOrEmpty(StreetTextBox.Text) || string.IsNullOrEmpty(NumberAddressTextBox.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+			if(Utilita.controllo_rete())
 			{
-				MessageBox.Show("Completa bene tutti i campi");
-				return;
+				if (string.IsNullOrEmpty(StreetTextBox.Text) || string.IsNullOrEmpty(NumberAddressTextBox.Text) || string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+				{
+					MessageBox.Show("Completa bene tutti i campi");
+					return;
+				}
+				foreach (var ordine in Utilita.ordinazioni)
+				{
+					//db.AddOrdinazione(ordine);
+					Utilita.N_acquisti += ordine.Quantita;
+				}
+				MessageBox.Show("Ordine effettuato");
+				Utilita.ordinazioni.Clear();
+				Utilita.elementi_carrello.Clear();
+				new Ristorante().Show();
+				this.Close();
 			}
-			foreach(var ordine in Utilita.ordinazioni)
-			{
-				//db.AddOrdinazione(ordine);
-				Utilita.N_acquisti += ordine.Quantita;
-			}
-			MessageBox.Show("Ordine effettuato");
-			Utilita.ordinazioni.Clear();
-			Utilita.elementi_carrello.Clear();
-			new Ristorante().Show();
-			this.Close();
 		}
 	}
 }

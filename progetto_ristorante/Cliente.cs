@@ -34,10 +34,13 @@
 
         private void btnEliminaAccount_Click(object sender, EventArgs e)
         {
-            db.DeleteUtente(Utilita.id_utente);
-            MessageBox.Show("Account eliminato correttamente");
-            new Form1().Show();
-            this.Close();
+            if(Utilita.controllo_rete())
+            {
+				db.DeleteUtente(Utilita.id_utente);
+				MessageBox.Show("Account eliminato correttamente");
+				new Form1().Show();
+				this.Close();
+			}
         }
 
         private void pcbTornaHomeProfilo_Click(object sender, EventArgs e)

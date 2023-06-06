@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,7 +29,7 @@ namespace progetto_ristorante
 		{
 			if (!Utilita.controllo_carrello("Burger"))
 			{
-				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Burger", 1, null, 9));
+				Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Burger", 1, Image.FromFile("foto/burger.PNG"), 9));
 			}
 		}
 
