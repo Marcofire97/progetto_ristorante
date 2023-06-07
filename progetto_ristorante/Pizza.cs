@@ -28,24 +28,27 @@ namespace progetto_ristorante
         {
             if (!Utilita.controllo_carrello("Pizza vegana"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza vegana", 1, null, 12));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza vegana", 1, Image.FromFile(@"Foto/pizza vegetariana.jpg"), 12));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
 
         private void btnCompraPizzaPeperoni_Click(object sender, EventArgs e)
         {
             if (!Utilita.controllo_carrello("Pizza al salame"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza al salame", 1, null, 9));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza al salame", 1, Image.FromFile(@"Foto/pizza salame.jpg"), 9));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
 
         private void btnCompraPizzaHawaii_Click(object sender, EventArgs e)
         {
             if (!Utilita.controllo_carrello("Pizza Hawaii"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza Hawaii", 1, null, 11));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza Hawaii", 1, Image.FromFile(@"Foto/pizza hawaii.jpg"), 11));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
     }
 }

@@ -83,6 +83,7 @@ namespace progetto_ristorante
         {
             pr.Quantita += 1;
             lblquantitàprodotto.Text = "(" + pr.Quantita.ToString() + ")";
+            aggiorna();
         }
 
         private void aggiorna()

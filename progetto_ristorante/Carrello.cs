@@ -10,98 +10,49 @@ using System.Windows.Forms;
 
 namespace progetto_ristorante
 {
-    public partial class Carrello : Form
-    {
-        /*
-		DateTime data = DateTime.Now;
-		Ordinazioni ord1;
-		Ordinazioni ord2;
-		*/
-        public Carrello()
-        {
-            InitializeComponent();
+	public partial class Carrello : Form
+	{
+		public Carrello()
+		{
+			InitializeComponent();
 
-            //TOGLI I COMMENTI MULTIRIGA PER TESTARE (Ogni ordine va distanziato di 50 pixel l'uno dall'altro)
 
-            /*
-			ord1 = new Ordinazioni(1, data.ToString(), "Prosciutto", 2, null, 4);
-			ord2 = new Ordinazioni(2, data.ToString(), "Prosciutto crudo", 5, null, 5);
-			ElementoCarrello elem1 = new ElementoCarrello(ord1);
-			elem1.Location = new Point(20, 50);
-			ElementoCarrello elem2 = new ElementoCarrello(ord2);
-			elem2.Location = new Point(20, 100);
-			groupBox1.Controls.Add(elem1);
-			groupBox1.Controls.Add(elem2);
-			*/
+			Utilita.elementi_carrello.Clear();
 
-            Utilita.elementi_carrello.Clear();
-            if (!string.IsNullOrEmpty(txbCodsconto.Text))
-            {
-                if (txbCodsconto.Text == Utilita.bonus_5)
-                {
-                    int sconto = 1 / Utilita.ordinazioni.Count;
-                    foreach (var ordine in Utilita.ordinazioni)
-                    {
-                        ordine.prezzo -= sconto;
-                    }
-                    Utilita.bonus_5 = null;
-                }
+			for (int i = 0; i < Utilita.ordinazioni.Count; i++)
+			{
+				Utilita.elementi_carrello.Add(new(Utilita.ordinazioni[i]));
+			}
+			int x = 20;
+			int y = 50;
+			foreach (var ordine in Utilita.elementi_carrello)
+			{
+				ordine.Location = new Point(x, y);
+				groupBox1.Controls.Add(ordine);
+				y += 50;
+			}
+			if (Utilita.elementi_carrello.Count > 0)
+			{
+				button1.Enabled = true;
+			}
+			double prezzo_totale = 0;
+			foreach (var ordine in Utilita.ordinazioni)
+			{
+				prezzo_totale += ordine.Quantita * ordine.prezzo;
+			}
+			prezzo.Text = prezzo_totale.ToString() + "€";
+		}
 
-                if (txbCodsconto.Text == Utilita.bonus_10)
-                {
-                    int sconto = 3 / Utilita.ordinazioni.Count;
-                    foreach (var ordine in Utilita.ordinazioni)
-                    {
-                        ordine.prezzo -= sconto; //cosa stai facendo?
-                        // guarda qquanti errori ci sono    
-                    }
-                    Utilita.bonus_10 = null;
-                }
+		private void pcbTornaHomeCarrello_Click(object sender, EventArgs e)
+		{
+			new Ristorante().Show();
+			this.Hide();
+		}
 
-                if (txbCodsconto.Text == Utilita.bonus_20)
-                {
-                    int sconto = 8 / Utilita.ordinazioni.Count;
-                    foreach (var ordine in Utilita.ordinazioni)
-                    {
-                        ordine.prezzo -= sconto;
-                    }
-                    Utilita.bonus_20 = null;
-                }
-            }
-
-            for (int i = 0; i < Utilita.ordinazioni.Count; i++)
-            {
-                Utilita.elementi_carrello.Add(new(Utilita.ordinazioni[i]));
-            }
-            int x = 20;
-            int y = 50;
-            foreach (var ordine in Utilita.elementi_carrello)
-            {
-                ordine.Location = new Point(x, y);
-                groupBox1.Controls.Add(ordine);
-                y += 50;
-            }
-            if (Utilita.elementi_carrello.Count > 0)
-            {
-                button1.Enabled = true;
-            }
-        }
-
-        private void pcbTornaHomeCarrello_Click(object sender, EventArgs e)
-        {
-            new Ristorante().Show();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Delivery().Show();
-            this.Hide();
-        }
-
-        private void txbCodsconto_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-    }
+		private void button1_Click(object sender, EventArgs e)
+		{
+			new Delivery().Show();
+			this.Close();
+		}
+	}
 }

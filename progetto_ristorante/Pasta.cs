@@ -28,24 +28,27 @@ namespace progetto_ristorante
         {
             if (!Utilita.controllo_carrello("Pizza"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza", 1, null, 2));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Pizza", 1, Image.FromFile(@"Foto/pezzo di pizza.jpg"), 2));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
 
         private void btnCompraOraLasagna_Click(object sender, EventArgs e)
         {
             if (!Utilita.controllo_carrello("Lasagna"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Lasagna", 1, null, 10));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Lasagna", 1, Image.FromFile(@"Foto/lasagna.jpg"), 10));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
 
         private void btnCompraOraSpaghetti_Click(object sender, EventArgs e)
         {
             if (!Utilita.controllo_carrello("Spaghetti"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Spaghetti", 1, null, 8.99));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Spaghetti", 1, Image.FromFile(@"Foto/spaghetti.jpg"), 8.99));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
     }
 }

@@ -54,7 +54,7 @@ namespace progetto_ristorante
         {
 			try
 			{
-				db.Execute("INSERT INTO Ordinazioni (UtenteID, Email, DataOrdine, Prodotto, Quantita) VALUES (@UtenteID, (SELECT EMAIL FROM Utenti WHERE ID = @UtenteID), @DataOrdine, @Prodotto, @Quantita)", o);
+				db.Execute($"INSERT INTO Ordinazioni (UtenteID, Email, DataOrdine, Prodotto, Quantita) VALUES (@UtenteID, (SELECT EMAIL FROM Utenti WHERE ID = @UtenteID), @DataOrdine, @Prodotto, @Quantita)", o);
 			}
 			catch (Exception ex)
 			{

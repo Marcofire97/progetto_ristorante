@@ -28,24 +28,27 @@ namespace progetto_ristorante
         {
             if (!Utilita.controllo_carrello("Torta Gialla"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta Gialla", 1, null, 18));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta Gialla", 1, Image.FromFile(@"Foto/torta gialla.jpg"), 18));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
 
         private void btnCompraTortaVerde_Click(object sender, EventArgs e)
         {
             if (!Utilita.controllo_carrello("Torta Verde"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta Verde", 1, null, 12));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta Verde", 1, Image.FromFile(@"Foto/torta verde.jpg"), 12));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
 
         private void btnCompraTortaRosa_Click(object sender, EventArgs e)
         {
             if (!Utilita.controllo_carrello("Torta Rosa"))
             {
-                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta Rosa", 1, null, 23));
-            }
+                Utilita.ordinazioni.Add(new(Utilita.id_utente, data.ToString(), "Torta Rosa", 1, Image.FromFile(@"Foto/torta rosa.jpg"), 23));
+				MessageBox.Show("Ordine aggiunto al carrello", "Ordine aggiunto", MessageBoxButtons.OK, MessageBoxIcon.None);
+			}
         }
     }
 }

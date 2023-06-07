@@ -36,7 +36,7 @@ namespace progetto_ristorante
                 }
                 foreach (var ordine in Utilita.ordinazioni)
                 {
-                    //db.AddOrdinazione(ordine);
+                    db.AddOrdinazione(ordine);
                     Utilita.N_acquisti += ordine.Quantita;
                 }
                 MessageBox.Show("Ordine effettuato con successo!");
